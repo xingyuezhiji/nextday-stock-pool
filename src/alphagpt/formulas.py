@@ -380,21 +380,33 @@ def evaluate_rpn(tokens: tuple[str, ...], features: dict[str, np.ndarray]) -> np
     return np.nan_to_num(stack[0], nan=-1e9, posinf=1e9, neginf=-1e9).astype(np.float32)
 
 
-def compute_strategy(matrix: dict, spec: StrategySpec) -> dict:
+def compute_strategy_matrix(matrix: dict, spec: StrategySpec) -> dict:
     features, eligible = build_features(matrix, spec.params)
     value = evaluate_rpn(spec.formula_tokens, features)
     score = _score_rank(eligible, value)
     buy_pool = _top_mask(eligible, value, int(spec.params["n_buy"]))
     buffer_pool = _top_mask(eligible, value, int(spec.params["n_hold"]))
     signal_days = _weekly_signal_mask(matrix["dates"])
+    return {
+        "score": score,
+        "value": value,
+        "eligible": eligible,
+        "buy_pool": buy_pool,
+        "buffer_pool": buffer_pool,
+        "signal_days": signal_days,
+    }
+
+
+def compute_strategy(matrix: dict, spec: StrategySpec) -> dict:
+    full = compute_strategy_matrix(matrix, spec)
     row = len(matrix["dates"]) - 1
     return {
-        "score": score[row],
-        "value": value[row],
-        "eligible": eligible[row],
-        "buy_mask": buy_pool[row] & signal_days[row],
-        "buffer_mask": buffer_pool[row],
-        "signal_enabled": bool(signal_days[row]),
+        "score": full["score"][row],
+        "value": full["value"][row],
+        "eligible": full["eligible"][row],
+        "buy_mask": full["buy_pool"][row] & full["signal_days"][row],
+        "buffer_mask": full["buffer_pool"][row],
+        "signal_enabled": bool(full["signal_days"][row]),
     }
 
 

@@ -37,6 +37,8 @@
   .chart-axis { stroke: var(--border); stroke-width: 1; }
   .chart-bar { fill: var(--blue); }
   .chart-bar-risk { fill: var(--green); }
+  .legend { display: flex; gap: 14px; align-items: center; color: var(--muted); font-size: 12px; margin-top: 8px; flex-wrap: wrap; }
+  .dot { display: inline-block; width: 18px; height: 3px; border-radius: 3px; vertical-align: middle; margin-right: 6px; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--panel); border-radius: 8px; overflow: hidden; }
   th, td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
   th { background: #1a202b; color: var(--muted); font-weight: 400; }
@@ -78,7 +80,7 @@
   <h2>一、策略总览</h2>
   <div class="grid" id="cards"></div>
 
-  <h2>二、回测绩效图</h2>
+  <h2>二、逐日净值曲线</h2>
   <div class="chart-grid" id="charts"></div>
 
   <h2>三、候选池明细</h2>
@@ -128,42 +130,46 @@ function rowTable(rows) {
 function shortName(s) {
   return String(s.label || s.strategy_id || "").replace("AlphaGPT ", "").replace(" c02 ", " ").replace(" c12 ", " ");
 }
-function chartPanel(title, items, formatter, riskMode = false) {
-  const clean = items.filter(x => x.value != null && Number.isFinite(Number(x.value)));
-  if (!clean.length) return `<div class="panel"><div class="chart-title">${esc(title)}</div><div class="empty">暂无可绘制数据</div></div>`;
-  const values = clean.map(x => Math.abs(Number(x.value)));
-  const max = Math.max(...values, 1e-9);
-  const rowH = 34;
-  const labelW = 150;
-  const valueW = 70;
-  const chartW = 520;
-  const width = labelW + chartW + valueW;
-  const height = 24 + rowH * clean.length;
-  const rows = clean.map((x, i) => {
-    const raw = Number(x.value);
-    const w = Math.max(2, Math.round(Math.abs(raw) / max * (chartW - 14)));
-    const y = 24 + i * rowH;
-    const cls = riskMode ? "chart-bar-risk" : "chart-bar";
-    return `<text class="chart-label" x="0" y="${y + 18}">${esc(x.name)}</text>
-      <rect class="${cls}" x="${labelW}" y="${y + 6}" width="${w}" height="16" rx="3"></rect>
-      <text class="chart-value" x="${labelW + chartW + 8}" y="${y + 18}">${esc(formatter(raw))}</text>`;
-  }).join("");
+function curvePanel(strategy, detail) {
+  const eq = (detail && detail.equity) || [];
+  const bench = (detail && detail.benchmark) || [];
+  if (!eq.length) return `<div class="panel"><div class="chart-title">${esc(shortName(strategy))}</div><div class="empty">暂无逐日净值数据</div></div>`;
+  const W = 560, H = 240, P = { l: 58, r: 12, t: 14, b: 26 };
+  const all = eq.concat(bench).map(p => Number(p.nav)).filter(Number.isFinite);
+  let lo = Math.min(...all), hi = Math.max(...all);
+  const pad = (hi - lo) * 0.08 || 1;
+  lo -= pad; hi += pad;
+  const xs = i => P.l + i * (W - P.l - P.r) / Math.max(eq.length - 1, 1);
+  const ys = v => P.t + (hi - v) * (H - P.t - P.b) / (hi - lo);
+  const line = arr => arr.map((p, i) => `${i ? "L" : "M"}${xs(i).toFixed(1)},${ys(Number(p.nav)).toFixed(1)}`).join("");
+  let grid = "", labels = "";
+  for (let i = 0; i <= 4; i++) {
+    const v = lo + (hi - lo) * i / 4;
+    const y = ys(v);
+    grid += `<line x1="${P.l}" y1="${y.toFixed(1)}" x2="${W - P.r}" y2="${y.toFixed(1)}" stroke="#232a36"/>`;
+    labels += `<text x="${P.l - 8}" y="${(y + 4).toFixed(1)}" fill="#8b949e" font-size="11" text-anchor="end">${(v / 10000).toFixed(0)}万</text>`;
+  }
+  const mid = Math.floor(eq.length / 2);
+  const xticks = [0, mid, eq.length - 1].map(i =>
+    `<text x="${xs(i).toFixed(1)}" y="${H - 6}" fill="#8b949e" font-size="11" text-anchor="middle">${esc(eq[i].d)}</text>`
+  ).join("");
+  const first = Number(eq[0].nav);
+  const last = Number(eq[eq.length - 1].nav);
+  const ret = Number.isFinite(first) && first > 0 ? last / first - 1 : null;
+  const bline = bench.length ? `<path d="${line(bench)}" fill="none" stroke="#6e7681" stroke-width="1.4"/>` : "";
   return `<div class="panel">
-    <div class="chart-title">${esc(title)}</div>
-    <svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(title)}">
-      <line class="chart-axis" x1="${labelW}" y1="10" x2="${labelW}" y2="${height - 2}"></line>
-      ${rows}
+    <div class="chart-title">${esc(shortName(strategy))} <span class="${(ret || 0) >= 0 ? "up" : "down"}" style="float:right">${pct(ret)}</span></div>
+    <svg class="chart-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(shortName(strategy))}逐日净值">
+      ${grid}${labels}${xticks}
+      ${bline}
+      <path d="${line(eq)}" fill="none" stroke="#d4a017" stroke-width="2"/>
     </svg>
+    <div class="legend"><span><i class="dot" style="background:#d4a017"></i>策略净值</span><span><i class="dot" style="background:#6e7681"></i>等权基准</span><span>区间 ${esc(eq[0].d)} ~ ${esc(eq[eq.length - 1].d)}</span></div>
   </div>`;
 }
-function renderCharts(strategies) {
-  const items = strategies.map(s => ({ name: shortName(s), bt: s.backtest || {} }));
-  document.getElementById("charts").innerHTML = [
-    chartPanel("总收益率", items.map(x => ({ name: x.name, value: x.bt.total_return })), pct),
-    chartPanel("最大回撤", items.map(x => ({ name: x.name, value: x.bt.max_drawdown })), pct, true),
-    chartPanel("夏普比率", items.map(x => ({ name: x.name, value: x.bt.sharpe })), num),
-    chartPanel("交易次数", items.map(x => ({ name: x.name, value: x.bt.n_trades })), v => String(Math.round(v)))
-  ].join("") + `<div class="panel chart-note">图表基于当前静态回测摘要字段绘制，不是逐日权益曲线；等后续补齐各策略 equity_curve 后，可切换为真实净值曲线。</div>`;
+function renderCharts(strategies, perStrategy) {
+  document.getElementById("charts").innerHTML = strategies.map(s => curvePanel(s, perStrategy[s.strategy_id])).join("")
+    + `<div class="panel chart-note">曲线由每日静态生成器输出：周信号、次日开盘调仓、等权持仓、每日收盘估值；实盘仍以本地 QMT 风控和成交价为准。</div>`;
 }
 function render(payload, perStrategy) {
   document.getElementById("meta").textContent = `信号日 ${payload.as_of || "-"} · 策略数 ${payload.strategies.length}`;
@@ -181,7 +187,7 @@ function render(payload, perStrategy) {
     </div>`;
   }).join("");
 
-  renderCharts(payload.strategies);
+  renderCharts(payload.strategies, perStrategy);
 
   document.getElementById("details").innerHTML = payload.strategies.map(s => {
     const d = perStrategy[s.strategy_id] || {};

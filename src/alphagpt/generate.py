@@ -7,12 +7,13 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 from ..config import ROOT, load_config
 from ..data_api import ZZClient
 from ..backtest import fetch_panel
-from .formulas import STRATEGIES, build_matrix, compute_strategy, strategy_base
+from .formulas import STRATEGIES, build_matrix, compute_strategy_matrix, strategy_base
 
 
 def _fmt(d: str) -> str:
@@ -54,7 +55,79 @@ def _row_payload(code: str, day_df: pd.DataFrame, names: dict[str, str],
     }
 
 
-def generate(days: int = 100) -> dict:
+def _curve_start_index(matrix: dict, max_points: int = 500) -> int:
+    return max(0, len(matrix["dates"]) - max_points)
+
+
+def _benchmark_curve(matrix: dict, max_points: int = 500, initial: float = 1_000_000.0) -> list[dict]:
+    dates = matrix["dates"]
+    close = matrix["fields"]["close"].astype("float64", copy=False)
+    start = _curve_start_index(matrix, max_points)
+    nav = float(initial)
+    curve: list[dict] = []
+    for row, day in enumerate(dates):
+        if row > 0:
+            prev = close[row - 1]
+            curr = close[row]
+            valid = np.isfinite(prev) & np.isfinite(curr) & (prev > 0) & (curr > 0)
+            if np.any(valid):
+                ret = np.nanmean(curr[valid] / prev[valid] - 1.0)
+                if np.isfinite(ret):
+                    nav *= 1.0 + float(ret)
+        if row >= start:
+            curve.append({"d": _fmt(day), "nav": round(nav, 2)})
+    return curve
+
+
+def _strategy_equity_curve(matrix: dict, result: dict, max_points: int = 500,
+                           initial: float = 1_000_000.0) -> list[dict]:
+    dates = matrix["dates"]
+    fields = matrix["fields"]
+    open_px = fields["open"].astype("float64", copy=False)
+    close_px = fields["close"].astype("float64", copy=False)
+    start = _curve_start_index(matrix, max_points)
+    cash = float(initial)
+    shares = np.zeros(len(matrix["codes"]), dtype="float64")
+    last_price = np.full(len(matrix["codes"]), np.nan, dtype="float64")
+    pending_target: set[int] | None = None
+    curve: list[dict] = []
+
+    for row, day in enumerate(dates):
+        exec_px = np.where(np.isfinite(open_px[row]) & (open_px[row] > 0), open_px[row], last_price)
+        if pending_target is not None:
+            mark_open = np.where(np.isfinite(exec_px) & (exec_px > 0), exec_px, last_price)
+            held_value = float(np.nansum(shares * np.nan_to_num(mark_open, nan=0.0)))
+            cash += held_value
+            shares[:] = 0.0
+            target_ids = np.array(sorted(pending_target), dtype=int)
+            if target_ids.size:
+                target_px = mark_open[target_ids]
+                valid = np.isfinite(target_px) & (target_px > 0)
+                target_ids = target_ids[valid]
+                target_px = target_px[valid]
+                if target_ids.size:
+                    per_pos = cash / float(target_ids.size)
+                    shares[target_ids] = per_pos / target_px
+                    cash -= float(np.sum(shares[target_ids] * target_px))
+            pending_target = None
+
+        mark_close = np.where(np.isfinite(close_px[row]) & (close_px[row] > 0), close_px[row], last_price)
+        nav = cash + float(np.nansum(shares * np.nan_to_num(mark_close, nan=0.0)))
+        valid_close = np.isfinite(close_px[row]) & (close_px[row] > 0)
+        last_price[valid_close] = close_px[row, valid_close]
+        if row >= start:
+            curve.append({"d": _fmt(day), "nav": round(nav, 2)})
+
+        if bool(result["signal_days"][row]):
+            current_ids = set(np.flatnonzero(shares > 0))
+            keep_ids = {int(i) for i in current_ids if bool(result["buffer_pool"][row, i])}
+            buy_ids = {int(i) for i in np.flatnonzero(result["buy_pool"][row])}
+            pending_target = keep_ids | buy_ids
+
+    return curve
+
+
+def generate(days: int = 560) -> dict:
     cfg = load_config()
     client = ZZClient(cfg)
     cal = client.trade_days(days=days + 10)
@@ -74,14 +147,21 @@ def generate(days: int = 100) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     strategies_payload = []
     qmt_plans = []
+    benchmark = _benchmark_curve(matrix)
 
     for spec in STRATEGIES:
-        result = compute_strategy(matrix, spec)
-        score = result["score"]
-        eligible_ids = [i for i in range(len(matrix["codes"])) if bool(result["eligible"][i])]
+        result = compute_strategy_matrix(matrix, spec)
+        last = len(matrix["dates"]) - 1
+        score = result["score"][last]
+        eligible = result["eligible"][last]
+        buy_mask = result["buy_pool"][last] & result["signal_days"][last]
+        buffer_mask = result["buffer_pool"][last]
+        signal_enabled = bool(result["signal_days"][last])
+        eligible_ids = [i for i in range(len(matrix["codes"])) if bool(eligible[i])]
         ranked_ids = sorted(eligible_ids, key=lambda i: (-float(score[i]), matrix["codes"][i]))
-        buffer_ids = [i for i in ranked_ids if bool(result["buffer_mask"][i])]
-        buy_ids = [i for i in ranked_ids if bool(result["buy_mask"][i])]
+        buffer_ids = [i for i in ranked_ids if bool(buffer_mask[i])]
+        buy_ids = [i for i in ranked_ids if bool(buy_mask[i])]
+        equity = _strategy_equity_curve(matrix, result)
 
         rows = []
         for rank, idx in enumerate(buy_ids, 1):
@@ -103,9 +183,12 @@ def generate(days: int = 100) -> dict:
             "rows": rows,
             "buffer_total": len(buffer_rows),
             "buffer_rows": buffer_rows,
-            "signal_enabled": bool(result["signal_enabled"]),
+            "signal_enabled": signal_enabled,
             "error": None,
         }
+        payload["equity"] = equity
+        payload["benchmark"] = benchmark
+        payload["curve_note"] = "Lightweight static Pages backtest: weekly signal, next-open rebalance, equal-weight target pool, daily close valuation."
         sdir = out_dir / spec.strategy_id
         sdir.mkdir(parents=True, exist_ok=True)
         (sdir / "latest.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -115,7 +198,7 @@ def generate(days: int = 100) -> dict:
             "label": spec.label,
             "as_of": _fmt(signal_date),
             "updated_at": updated_at,
-            "signal_enabled": bool(result["signal_enabled"]),
+            "signal_enabled": signal_enabled,
             "buy_candidates": rows,
             "buffer_candidates": buffer_rows,
             "sell_rule": "sell positions outside n_hold buffer at next open",
@@ -141,7 +224,7 @@ def generate(days: int = 100) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--days", type=int, default=100)
+    parser.add_argument("--days", type=int, default=560)
     args = parser.parse_args()
     result = generate(days=args.days)
     print(f"AlphaGPT generated: as_of={result['as_of']} strategies={len(result['plans'])}")

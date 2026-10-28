@@ -76,7 +76,7 @@ jobs:
         env:
           TZ: Asia/Shanghai
           ZZSHARE_TOKEN: ${{ secrets.ZZSHARE_TOKEN }}
-        run: python -m src.alphagpt.generate
+        run: python -m src.alphagpt.generate --days 560
 
       - name: 刷新策略体检数据(探针/季度剖面随每日回测日更, 第48轮)
         if: steps.guard.outputs.skip != 'true'
