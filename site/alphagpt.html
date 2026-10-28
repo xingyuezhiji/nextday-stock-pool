@@ -28,6 +28,15 @@
   .small { font-size: 12px; }
   .metric { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 12px; margin-top: 10px; font-size: 13px; }
   .metric b { font-weight: 400; color: var(--text); }
+  .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .chart-title { font-size: 14px; color: var(--gold); margin-bottom: 8px; }
+  .chart-note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  .chart-svg { width: 100%; height: auto; display: block; }
+  .chart-label { fill: var(--text); font-size: 12px; }
+  .chart-value { fill: var(--muted); font-size: 12px; }
+  .chart-axis { stroke: var(--border); stroke-width: 1; }
+  .chart-bar { fill: var(--blue); }
+  .chart-bar-risk { fill: var(--green); }
   table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--panel); border-radius: 8px; overflow: hidden; }
   th, td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
   th { background: #1a202b; color: var(--muted); font-weight: 400; }
@@ -69,10 +78,13 @@
   <h2>一、策略总览</h2>
   <div class="grid" id="cards"></div>
 
-  <h2>二、候选池明细</h2>
+  <h2>二、回测绩效图</h2>
+  <div class="chart-grid" id="charts"></div>
+
+  <h2>三、候选池明细</h2>
   <div id="details"></div>
 
-  <h2>三、QMT 读取方式</h2>
+  <h2>四、QMT 读取方式</h2>
   <div class="panel">
     <div class="small muted">总计划：</div>
     <p><code id="qmt-all"></code></p>
@@ -113,6 +125,46 @@ function rowTable(rows) {
   });
   return html + `</table></div>`;
 }
+function shortName(s) {
+  return String(s.label || s.strategy_id || "").replace("AlphaGPT ", "").replace(" c02 ", " ").replace(" c12 ", " ");
+}
+function chartPanel(title, items, formatter, riskMode = false) {
+  const clean = items.filter(x => x.value != null && Number.isFinite(Number(x.value)));
+  if (!clean.length) return `<div class="panel"><div class="chart-title">${esc(title)}</div><div class="empty">暂无可绘制数据</div></div>`;
+  const values = clean.map(x => Math.abs(Number(x.value)));
+  const max = Math.max(...values, 1e-9);
+  const rowH = 34;
+  const labelW = 150;
+  const valueW = 70;
+  const chartW = 520;
+  const width = labelW + chartW + valueW;
+  const height = 24 + rowH * clean.length;
+  const rows = clean.map((x, i) => {
+    const raw = Number(x.value);
+    const w = Math.max(2, Math.round(Math.abs(raw) / max * (chartW - 14)));
+    const y = 24 + i * rowH;
+    const cls = riskMode ? "chart-bar-risk" : "chart-bar";
+    return `<text class="chart-label" x="0" y="${y + 18}">${esc(x.name)}</text>
+      <rect class="${cls}" x="${labelW}" y="${y + 6}" width="${w}" height="16" rx="3"></rect>
+      <text class="chart-value" x="${labelW + chartW + 8}" y="${y + 18}">${esc(formatter(raw))}</text>`;
+  }).join("");
+  return `<div class="panel">
+    <div class="chart-title">${esc(title)}</div>
+    <svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(title)}">
+      <line class="chart-axis" x1="${labelW}" y1="10" x2="${labelW}" y2="${height - 2}"></line>
+      ${rows}
+    </svg>
+  </div>`;
+}
+function renderCharts(strategies) {
+  const items = strategies.map(s => ({ name: shortName(s), bt: s.backtest || {} }));
+  document.getElementById("charts").innerHTML = [
+    chartPanel("总收益率", items.map(x => ({ name: x.name, value: x.bt.total_return })), pct),
+    chartPanel("最大回撤", items.map(x => ({ name: x.name, value: x.bt.max_drawdown })), pct, true),
+    chartPanel("夏普比率", items.map(x => ({ name: x.name, value: x.bt.sharpe })), num),
+    chartPanel("交易次数", items.map(x => ({ name: x.name, value: x.bt.n_trades })), v => String(Math.round(v)))
+  ].join("") + `<div class="panel chart-note">图表基于当前静态回测摘要字段绘制，不是逐日权益曲线；等后续补齐各策略 equity_curve 后，可切换为真实净值曲线。</div>`;
+}
 function render(payload, perStrategy) {
   document.getElementById("meta").textContent = `信号日 ${payload.as_of || "-"} · 策略数 ${payload.strategies.length}`;
   document.getElementById("qmt-all").textContent = base + "data/alphagpt/qmt_order_plans.json";
@@ -128,6 +180,8 @@ function render(payload, perStrategy) {
       <code>${esc(url)}</code>
     </div>`;
   }).join("");
+
+  renderCharts(payload.strategies);
 
   document.getElementById("details").innerHTML = payload.strategies.map(s => {
     const d = perStrategy[s.strategy_id] || {};
