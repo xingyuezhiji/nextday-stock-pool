@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlphaGPT 多策略池 · QMT JSON</title>
+<style>
+  :root {
+    --bg: #0b0e14; --panel: #12161f; --panel2: #171c26; --border: #232a36;
+    --text: #e6edf3; --muted: #8b949e; --gold: #d4a017; --red: #f85149;
+    --green: #3fb950; --blue: #58a6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: "PingFang SC","Microsoft YaHei",-apple-system,sans-serif; line-height: 1.6; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 16px 64px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 18px; margin-bottom: 22px; }
+  h1 { font-size: 25px; color: var(--gold); }
+  h1 small { font-size: 13px; color: var(--muted); font-weight: normal; margin-left: 12px; }
+  h2 { font-size: 18px; margin: 28px 0 12px; padding-left: 10px; border-left: 3px solid var(--gold); }
+  a { color: var(--blue); text-decoration: none; }
+  .meta { color: var(--muted); font-size: 13px; margin-top: 6px; }
+  .topnav { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .navbtn { display: inline-block; padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--panel); color: var(--text); font-size: 13px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .card, .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+  .card h3 { font-size: 15px; color: var(--gold); margin-bottom: 6px; }
+  .muted { color: var(--muted); }
+  .small { font-size: 12px; }
+  .metric { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 12px; margin-top: 10px; font-size: 13px; }
+  .metric b { font-weight: 400; color: var(--text); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--panel); border-radius: 8px; overflow: hidden; }
+  th, td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { background: #1a202b; color: var(--muted); font-weight: 400; }
+  tr:hover td { background: #1a2029; }
+  .tscroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .up { color: var(--red); }
+  .down { color: var(--green); }
+  .badge { display: inline-block; font-size: 12px; padding: 3px 8px; border-radius: 12px; border: 1px solid var(--border); color: var(--muted); margin: 3px 4px 0 0; }
+  code { color: var(--gold); word-break: break-all; white-space: normal; }
+  pre { overflow-x: auto; background: #090c12; border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 12px; color: var(--muted); }
+  .empty { color: var(--muted); padding: 12px 0; }
+  .warn { border-color: var(--gold); background: rgba(212,160,23,.08); }
+  footer { margin-top: 32px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding-top: 16px; }
+  @media (max-width: 640px) {
+    .wrap { padding: 18px 10px 48px; }
+    h1 { font-size: 20px; }
+    h1 small { display: block; margin-left: 0; margin-top: 4px; }
+    table { font-size: 12px; }
+    th, td { padding: 7px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AlphaGPT 多策略池 <small>静态页面 + QMT JSON 接口</small></h1>
+    <div class="meta" id="meta">加载中...</div>
+    <div class="topnav">
+      <a class="navbtn" href="./">返回 nextday 单吊页</a>
+      <a class="navbtn" href="./data/alphagpt/latest.json">总览 JSON</a>
+      <a class="navbtn" href="./data/alphagpt/qmt_order_plans.json">QMT 计划 JSON</a>
+    </div>
+  </header>
+
+  <div class="panel warn small">
+    本页第一阶段只发布静态策略定义、最新候选池、回测摘要和 QMT 读取地址。实盘下单仍应在本地 QMT 做账户、停牌、涨跌停、金额上限和人工确认风控。
+  </div>
+
+  <h2>一、策略总览</h2>
+  <div class="grid" id="cards"></div>
+
+  <h2>二、候选池明细</h2>
+  <div id="details"></div>
+
+  <h2>三、QMT 读取方式</h2>
+  <div class="panel">
+    <div class="small muted">总计划：</div>
+    <p><code id="qmt-all"></code></p>
+    <br>
+    <div class="small muted">按策略读取时，使用每张策略卡片里的 latest.json。QMT 端建议按 strategy_id 配置不同资金上限，不要把多个策略默认共用同一笔满仓资金。</div>
+  </div>
+
+  <footer>本站为量化研究展示，不构成投资建议。GitHub Pages 只承载静态数据，不保存券商账号和真实持仓。</footer>
+</div>
+
+<script>
+const base = location.href.replace(/alphagpt\.html.*$/, "");
+const pct = v => v == null ? "-" : ((v > 0 ? "+" : "") + (Number(v) * 100).toFixed(2) + "%");
+const pctRaw = v => v == null ? "-" : ((v > 0 ? "+" : "") + Number(v).toFixed(2) + "%");
+const num = v => v == null ? "-" : Number(v).toFixed(2);
+const esc = s => { const d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML; };
+async function jget(url) {
+  const r = await fetch(url + "?t=" + Date.now());
+  if (!r.ok) throw new Error(url + " " + r.status);
+  return r.json();
+}
+function btMetric(bt) {
+  if (!bt) return `<div class="muted small">暂无回测摘要</div>`;
+  return `<div class="metric">
+    <span>总收益 <b class="${(bt.total_return || 0) >= 0 ? "up" : "down"}">${pct(bt.total_return)}</b></span>
+    <span>年化 <b>${pct(bt.annual_return)}</b></span>
+    <span>最大回撤 <b class="down">${pct(bt.max_drawdown)}</b></span>
+    <span>夏普 <b>${num(bt.sharpe)}</b></span>
+    <span>胜率 <b>${pct(bt.win_rate)}</b></span>
+    <span>交易次数 <b>${bt.n_trades ?? "-"}</b></span>
+  </div>`;
+}
+function rowTable(rows) {
+  if (!rows || rows.length === 0) return `<div class="empty">当前最新交易日无命中候选，QMT 应跳过该策略下单。</div>`;
+  let html = `<div class="tscroll"><table><tr><th>#</th><th>代码</th><th>名称</th><th>收盘</th><th>涨幅</th><th>成交额</th><th>换手</th><th>评分</th></tr>`;
+  rows.slice(0, 45).forEach((r, i) => {
+    html += `<tr><td>${i + 1}</td><td>${esc(r.symbol)}</td><td>${esc(r.name)}</td><td>${r.close ?? "-"}</td><td class="${(r.change_pct || 0) >= 0 ? "up" : "down"}">${pctRaw(r.change_pct)}</td><td>${r.amount ?? "-"}</td><td>${r.turnover_rate ?? "-"}</td><td>${num(r.score)}</td></tr>`;
+  });
+  return html + `</table></div>`;
+}
+function render(payload, perStrategy) {
+  document.getElementById("meta").textContent = `信号日 ${payload.as_of || "-"} · 策略数 ${payload.strategies.length}`;
+  document.getElementById("qmt-all").textContent = base + "data/alphagpt/qmt_order_plans.json";
+  document.getElementById("cards").innerHTML = payload.strategies.map(s => {
+    const latest = perStrategy[s.strategy_id] || {};
+    const url = base + `data/alphagpt/${s.strategy_id}/latest.json`;
+    return `<div class="card">
+      <h3>${esc(s.label)}</h3>
+      <div class="small muted">${esc(s.strategy_id)}</div>
+      <div style="margin-top:8px"><span class="badge">n_buy=${s.params.n_buy}</span><span class="badge">n_hold=${s.params.n_hold}</span><span class="badge">候选 ${latest.latest?.total ?? 0}</span></div>
+      ${btMetric(s.backtest)}
+      <div class="small muted" style="margin-top:10px">QMT:</div>
+      <code>${esc(url)}</code>
+    </div>`;
+  }).join("");
+
+  document.getElementById("details").innerHTML = payload.strategies.map(s => {
+    const d = perStrategy[s.strategy_id] || {};
+    const latest = d.latest || { rows: [], total: 0 };
+    return `<section class="panel" style="margin-bottom:14px">
+      <h3 style="color:var(--gold);font-size:16px;margin-bottom:8px">${esc(s.label)}</h3>
+      <div class="small muted">买入：${esc(s.trading_rule.buy)}</div>
+      <div class="small muted">卖出：${esc(s.trading_rule.sell)}</div>
+      <div style="margin:8px 0">${(s.formula_tokens || []).map(x => `<span class="badge">${esc(x)}</span>`).join("")}</div>
+      ${rowTable(latest.rows)}
+    </section>`;
+  }).join("");
+}
+(async function main() {
+  const payload = await jget("./data/alphagpt/latest.json");
+  const entries = await Promise.all(payload.strategies.map(async s => [s.strategy_id, await jget(`./data/alphagpt/${s.strategy_id}/latest.json`)]));
+  render(payload, Object.fromEntries(entries));
+})().catch(e => {
+  document.getElementById("meta").textContent = "加载失败: " + e.message;
+});
+</script>
+</body>
+</html>

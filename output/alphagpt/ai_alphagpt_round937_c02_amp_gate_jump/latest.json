@@ -1,0 +1,56 @@
+{
+  "strategy_id": "ai_alphagpt_round937_c02_amp_gate_jump",
+  "label": "AlphaGPT round937 c02 amp gate jump",
+  "name": "AlphaGPT round937 candidate #2: amplitude gate jump.",
+  "description": "Round937 AlphaGPT formula gating MA60 repair and delayed low-crowding by low-amplitude jump confirmation.",
+  "as_of": "2026-10-28",
+  "updated_at": null,
+  "formula_tokens": [
+    "CV_CORR30_LOW",
+    "DECAY",
+    "MA60_BIAS_LOW",
+    "CA_CORR20_LOW",
+    "DELAY1",
+    "ABS",
+    "ADD",
+    "AMP20_LOW",
+    "JUMP",
+    "GATE",
+    "DECAY",
+    "JUMP"
+  ],
+  "params": {
+    "n_buy": 30,
+    "n_hold": 45,
+    "min_listed_days": 60,
+    "amount_window": 20,
+    "min_avg_amount": 30000000.0
+  },
+  "trading_rule": {
+    "buy": "weekly rotation, buy top n_buy by score at next open",
+    "sell": "sell positions outside n_hold buffer at next open",
+    "sizing": "equal weight, QMT should apply local cash/position limits"
+  },
+  "backtest": {
+    "strategy_id": "ai_alphagpt_round937_c02_amp_gate_jump",
+    "grid": "stop10_trail12_exp50_pos5",
+    "total_return": 1.183,
+    "annual_return": 0.499,
+    "max_drawdown": -0.0916,
+    "sharpe": 2.77,
+    "sortino": 4.25,
+    "calmar": 5.45,
+    "win_rate": null,
+    "profit_factor": null,
+    "n_trades": 311,
+    "final_equity": 2183010.32,
+    "max_exposure": null,
+    "formula": null,
+    "rank": null
+  },
+  "latest": {
+    "total": 0,
+    "rows": [],
+    "error": null
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "as_of": "2026-10-28",
+  "plans": [
+    {
+      "strategy_id": "ai_alphagpt_round937_c02_amp_gate_jump",
+      "as_of": "2026-10-28",
+      "buy_candidates": [],
+      "sell_rule": "sell positions outside n_hold buffer at next open",
+      "params": {
+        "n_buy": 30,
+        "n_hold": 45,
+        "min_listed_days": 60,
+        "amount_window": 20,
+        "min_avg_amount": 30000000.0
+      }
+    },
+    {
+      "strategy_id": "ai_alphagpt_round935_c12_jump_delay",
+      "as_of": "2026-10-28",
+      "buy_candidates": [],
+      "sell_rule": "sell positions outside n_hold buffer at next open",
+      "params": {
+        "n_buy": 30,
+        "n_hold": 45,
+        "min_listed_days": 60,
+        "amount_window": 20,
+        "min_avg_amount": 30000000.0
+      }
+    },
+    {
+      "strategy_id": "ai_alphagpt_round943_c02_delay_bias_ma",
+      "as_of": "2026-10-28",
+      "buy_candidates": [],
+      "sell_rule": "sell positions outside n_hold buffer at next open",
+      "params": {
+        "n_buy": 10,
+        "n_hold": 15,
+        "min_listed_days": 60,
+        "amount_window": 20,
+        "min_avg_amount": 30000000.0
+      }
+    },
+    {
+      "strategy_id": "ai_alphagpt_round944_c02_delay_cv_max3",
+      "as_of": "2026-10-28",
+      "buy_candidates": [],
+      "sell_rule": "sell positions outside n_hold buffer at next open",
+      "params": {
+        "n_buy": 10,
+        "n_hold": 15,
+        "min_listed_days": 60,
+        "amount_window": 20,
+        "min_avg_amount": 30000000.0
+      }
+    }
+  ]
+}

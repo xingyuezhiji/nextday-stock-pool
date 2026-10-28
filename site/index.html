@@ -22,6 +22,9 @@
   .badge.ok { color: var(--green); border-color: var(--green); }
   .badge.stop { color: var(--red); border-color: var(--red); }
   .badge.gold { color: var(--gold); border-color: var(--gold); }
+  .topnav { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .navbtn { display: inline-block; padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--panel); color: var(--text); font-size: 13px; }
+  .navbtn.hot { color: var(--gold); border-color: var(--gold); }
   h2 { font-size: 18px; margin: 30px 0 12px; padding-left: 10px; border-left: 3px solid var(--gold); }
   h2 .sub { font-size: 12px; color: var(--muted); font-weight: normal; margin-left: 8px; }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
@@ -91,6 +94,10 @@
     <h1>A股次日候选池系统 <small>趋势缩量回调 · 次日深低开竞价承接 · 单吊执行</small></h1>
     <div class="meta" id="meta">加载中...</div>
     <div class="badges" id="badges"></div>
+    <div class="topnav">
+      <a class="navbtn hot" href="./alphagpt.html">AlphaGPT 多策略池</a>
+      <a class="navbtn" href="./data/alphagpt/qmt_order_plans.json">QMT 多策略 JSON</a>
+    </div>
   </header>
 
   <h2>一、明日单吊计划 <span class="sub">每日仅执行评分第 1 名 1 笔</span></h2>

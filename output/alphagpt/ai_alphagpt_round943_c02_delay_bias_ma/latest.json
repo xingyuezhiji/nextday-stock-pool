@@ -1,0 +1,56 @@
+{
+  "strategy_id": "ai_alphagpt_round943_c02_delay_bias_ma",
+  "label": "AlphaGPT round943 c02 delay bias ma",
+  "name": "AlphaGPT round943 candidate #2: delayed bias with MA jump gate.",
+  "description": "Round943 c12 mutation combining delayed crowding with MA60 bias jump rejection.",
+  "as_of": "2026-10-28",
+  "updated_at": null,
+  "formula_tokens": [
+    "CV_CORR30_LOW",
+    "DELAY1",
+    "MA60_BIAS_LOW",
+    "CV_CORR30_LOW",
+    "MA60_BIAS_LOW",
+    "JUMP",
+    "NEG",
+    "GATE",
+    "CV_CORR30_LOW",
+    "DELAY1",
+    "GATE",
+    "JUMP"
+  ],
+  "params": {
+    "n_buy": 10,
+    "n_hold": 15,
+    "min_listed_days": 60,
+    "amount_window": 20,
+    "min_avg_amount": 30000000.0
+  },
+  "trading_rule": {
+    "buy": "weekly rotation, buy top n_buy by score at next open",
+    "sell": "sell positions outside n_hold buffer at next open",
+    "sizing": "equal weight, QMT should apply local cash/position limits"
+  },
+  "backtest": {
+    "strategy_id": "tmp_round943_2y06_c08",
+    "grid": null,
+    "total_return": 2.4591,
+    "annual_return": 0.9107,
+    "max_drawdown": -0.1309,
+    "sharpe": 3.75,
+    "sortino": 6.23,
+    "calmar": 6.96,
+    "win_rate": 0.6143,
+    "profit_factor": 1.76,
+    "n_trades": 643,
+    "final_equity": 3459051.8,
+    "max_exposure": 0.6392,
+    "formula": "CV_CORR30_LOW DELAY1 MA60_BIAS_LOW CV_CORR30_LOW MA60_BIAS_LOW JUMP NEG GATE CV_CORR30_LOW DELAY1 GATE JUMP",
+    "rank": 8
+  },
+  "latest": {
+    "total": 0,
+    "rows": [],
+    "error": null
+  }
+}

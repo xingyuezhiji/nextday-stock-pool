@@ -94,8 +94,8 @@ jobs:
         if: steps.guard.outputs.skip != 'true'
         run: |
           mkdir -p deploy/data
-          cp site/index.html deploy/
-          cp output/*.json deploy/data/ 2>/dev/null || true
+          cp site/*.html deploy/
+          cp -R output/* deploy/data/ 2>/dev/null || true
 
       - name: 上传 Pages 产物
         if: steps.guard.outputs.skip != 'true'
