@@ -4,7 +4,7 @@
   "name": "AlphaGPT round935 candidate #12: jump with delayed gate.",
   "description": "Round935 AlphaGPT formula preserving only delayed low-crowding jump confirmations.",
   "as_of": "2026-10-28",
-  "updated_at": "2026-10-28 17:33:51",
+  "updated_at": "2026-10-28 17:40:30",
   "formula_tokens": [
     "CV_CORR30_LOW",
     "MAX3",

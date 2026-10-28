@@ -4,7 +4,7 @@
   "name": "AlphaGPT round937 candidate #2: amplitude gate jump.",
   "description": "Round937 AlphaGPT formula gating MA60 repair and delayed low-crowding by low-amplitude jump confirmation.",
   "as_of": "2026-10-28",
-  "updated_at": "2026-10-28 17:33:51",
+  "updated_at": "2026-10-28 17:40:30",
   "formula_tokens": [
     "CV_CORR30_LOW",
     "DECAY",

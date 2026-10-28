@@ -5,7 +5,7 @@
     "name": "AlphaGPT round937 candidate #2: amplitude gate jump.",
     "description": "Round937 AlphaGPT formula gating MA60 repair and delayed low-crowding by low-amplitude jump confirmation.",
     "as_of": "2026-10-28",
-    "updated_at": "2026-10-28 17:33:51",
+    "updated_at": "2026-10-28 17:40:30",
     "formula_tokens": [
       "CV_CORR30_LOW",
       "DECAY",
@@ -56,7 +56,7 @@
     "name": "AlphaGPT round935 candidate #12: jump with delayed gate.",
     "description": "Round935 AlphaGPT formula preserving only delayed low-crowding jump confirmations.",
     "as_of": "2026-10-28",
-    "updated_at": "2026-10-28 17:33:51",
+    "updated_at": "2026-10-28 17:40:30",
     "formula_tokens": [
       "CV_CORR30_LOW",
       "MAX3",
@@ -107,7 +107,7 @@
     "name": "AlphaGPT round943 candidate #2: delayed bias with MA jump gate.",
     "description": "Round943 c12 mutation combining delayed crowding with MA60 bias jump rejection.",
     "as_of": "2026-10-28",
-    "updated_at": "2026-10-28 17:33:51",
+    "updated_at": "2026-10-28 17:40:30",
     "formula_tokens": [
       "CV_CORR30_LOW",
       "DELAY1",
@@ -158,7 +158,7 @@
     "name": "AlphaGPT round944 candidate #2: delayed crowding with max3 fallback.",
     "description": "Round944 two-year mutation using delayed low crowding and max3 crowding fallback for lower drawdown.",
     "as_of": "2026-10-28",
-    "updated_at": "2026-10-28 17:33:51",
+    "updated_at": "2026-10-28 17:40:30",
     "formula_tokens": [
       "CV_CORR30_LOW",
       "DELAY1",
