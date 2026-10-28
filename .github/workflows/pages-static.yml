@@ -1,0 +1,41 @@
+# 仅部署静态站点产物，不运行每日选股/回测。
+name: 静态页面部署
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "output/**"
+      - ".github/workflows/pages-static.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 组装 Pages 站点
+        run: |
+          mkdir -p deploy/data
+          cp site/*.html deploy/
+          cp -R output/* deploy/data/ 2>/dev/null || true
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: deploy
+
+      - name: 部署 GitHub Pages
+        uses: actions/deploy-pages@v4
