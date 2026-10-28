@@ -4,7 +4,7 @@
   "name": "AlphaGPT round944 candidate #2: delayed crowding with max3 fallback.",
   "description": "Round944 two-year mutation using delayed low crowding and max3 crowding fallback for lower drawdown.",
   "as_of": "2026-10-28",
-  "updated_at": "2026-10-28 17:59:18",
+  "updated_at": "2026-10-29 00:30:43",
   "formula_tokens": [
     "CV_CORR30_LOW",
     "DELAY1",

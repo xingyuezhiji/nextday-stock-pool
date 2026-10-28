@@ -1,12 +1,12 @@
 {
   "as_of": "2026-10-28",
-  "updated_at": "2026-10-28 17:59:18",
+  "updated_at": "2026-10-29 00:30:43",
   "plans": [
     {
       "strategy_id": "ai_alphagpt_round937_c02_amp_gate_jump",
       "label": "AlphaGPT round937 c02 amp gate jump",
       "as_of": "2026-10-28",
-      "updated_at": "2026-10-28 17:59:18",
+      "updated_at": "2026-10-29 00:30:43",
       "signal_enabled": false,
       "buy_candidates": [],
       "buffer_candidates": [
@@ -610,7 +610,7 @@
       "strategy_id": "ai_alphagpt_round935_c12_jump_delay",
       "label": "AlphaGPT round935 c12 jump delay",
       "as_of": "2026-10-28",
-      "updated_at": "2026-10-28 17:59:18",
+      "updated_at": "2026-10-29 00:30:43",
       "signal_enabled": false,
       "buy_candidates": [],
       "buffer_candidates": [
@@ -1214,7 +1214,7 @@
       "strategy_id": "ai_alphagpt_round943_c02_delay_bias_ma",
       "label": "AlphaGPT round943 c02 delay bias ma",
       "as_of": "2026-10-28",
-      "updated_at": "2026-10-28 17:59:18",
+      "updated_at": "2026-10-29 00:30:43",
       "signal_enabled": false,
       "buy_candidates": [],
       "buffer_candidates": [
@@ -1428,7 +1428,7 @@
       "strategy_id": "ai_alphagpt_round944_c02_delay_cv_max3",
       "label": "AlphaGPT round944 c02 delay cv max3",
       "as_of": "2026-10-28",
-      "updated_at": "2026-10-28 17:59:18",
+      "updated_at": "2026-10-29 00:30:43",
       "signal_enabled": false,
       "buy_candidates": [],
       "buffer_candidates": [
