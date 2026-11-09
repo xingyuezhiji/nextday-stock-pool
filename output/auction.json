@@ -1,8 +1,8 @@
 {
- "confirm_time": "2026-11-06 16:26:28",
+ "confirm_time": "2026-11-09 16:10:44",
  "buy_date": "2026-11-06",
  "signal_date": "2026-11-05",
- "for_today": true,
+ "for_today": false,
  "allow_buy": true,
  "floor_pct": -2.75,
  "position_pct": 100.0,
@@ -13,8 +13,6 @@
  "rank": null,
  "open_px": null,
  "gap_pct": null,
- "chain": [
-  "第1名 金达威: 缺口-2.33%未达承接线-2.75% → 顺延"
- ],
- "note": "全部候选未达标 → 今日空仓"
+ "chain": [],
+ "note": "今日(20261109)非计划买入日(计划买入日2026-11-06), 无需竞价确认"
 }
