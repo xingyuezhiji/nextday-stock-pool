@@ -3,8 +3,8 @@
   "label": "AlphaGPT round935 c12 jump delay",
   "name": "AlphaGPT round935 candidate #12: jump with delayed gate.",
   "description": "Round935 AlphaGPT formula preserving only delayed low-crowding jump confirmations.",
-  "as_of": "2026-11-11",
-  "updated_at": "2026-11-12 01:47:12",
+  "as_of": "2026-11-12",
+  "updated_at": "2026-11-13 01:58:50",
   "formula_tokens": [
     "CV_CORR30_LOW",
     "MAX3",
@@ -49,8 +49,399 @@
     "rank": null
   },
   "latest": {
-    "total": 0,
-    "rows": [],
+    "total": 30,
+    "rows": [
+      {
+        "rank": 1,
+        "symbol": "688809.SH",
+        "code": "688809.SH",
+        "name": "强一股份",
+        "close": 271.0,
+        "change_pct": 3.61,
+        "amount": 8.55,
+        "amount_yi": 8.55,
+        "turnover_rate": 8.61,
+        "score": 100.0,
+        "selected": true
+      },
+      {
+        "rank": 2,
+        "symbol": "300731.SZ",
+        "code": "300731.SZ",
+        "name": "科创新源",
+        "close": 27.78,
+        "change_pct": -2.49,
+        "amount": 1.7,
+        "amount_yi": 1.7,
+        "turnover_rate": 3.53,
+        "score": 99.9791,
+        "selected": true
+      },
+      {
+        "rank": 3,
+        "symbol": "000520.SZ",
+        "code": "000520.SZ",
+        "name": "凤凰航运",
+        "close": 2.84,
+        "change_pct": 1.07,
+        "amount": 1.62,
+        "amount_yi": 1.62,
+        "turnover_rate": 5.61,
+        "score": 99.9581,
+        "selected": true
+      },
+      {
+        "rank": 4,
+        "symbol": "300506.SZ",
+        "code": "300506.SZ",
+        "name": "名家汇",
+        "close": 3.33,
+        "change_pct": -2.35,
+        "amount": 0.69,
+        "amount_yi": 0.69,
+        "turnover_rate": 2.68,
+        "score": 99.9372,
+        "selected": true
+      },
+      {
+        "rank": 5,
+        "symbol": "601020.SH",
+        "code": "601020.SH",
+        "name": "华钰矿业",
+        "close": 14.23,
+        "change_pct": -4.94,
+        "amount": 2.83,
+        "amount_yi": 2.83,
+        "turnover_rate": 2.38,
+        "score": 99.9163,
+        "selected": true
+      },
+      {
+        "rank": 6,
+        "symbol": "300611.SZ",
+        "code": "300611.SZ",
+        "name": "美力科技",
+        "close": 20.1,
+        "change_pct": -3.27,
+        "amount": 1.06,
+        "amount_yi": 1.06,
+        "turnover_rate": 3.47,
+        "score": 99.8953,
+        "selected": true
+      },
+      {
+        "rank": 7,
+        "symbol": "001237.SZ",
+        "code": "001237.SZ",
+        "name": "惠康科技",
+        "close": 42.98,
+        "change_pct": -1.29,
+        "amount": 0.32,
+        "amount_yi": 0.32,
+        "turnover_rate": 2.1,
+        "score": 99.8744,
+        "selected": true
+      },
+      {
+        "rank": 8,
+        "symbol": "603284.SH",
+        "code": "603284.SH",
+        "name": "林平发展",
+        "close": 34.6,
+        "change_pct": -1.4,
+        "amount": 0.24,
+        "amount_yi": 0.24,
+        "turnover_rate": 3.65,
+        "score": 99.8535,
+        "selected": true
+      },
+      {
+        "rank": 9,
+        "symbol": "600711.SH",
+        "code": "600711.SH",
+        "name": "盛屯矿业",
+        "close": 8.07,
+        "change_pct": -3.7,
+        "amount": 5.62,
+        "amount_yi": 5.62,
+        "turnover_rate": 2.22,
+        "score": 99.8325,
+        "selected": true
+      },
+      {
+        "rank": 10,
+        "symbol": "300835.SZ",
+        "code": "300835.SZ",
+        "name": "龙磁科技",
+        "close": 125.56,
+        "change_pct": 2.52,
+        "amount": 5.85,
+        "amount_yi": 5.85,
+        "turnover_rate": 5.51,
+        "score": 99.8116,
+        "selected": true
+      },
+      {
+        "rank": 11,
+        "symbol": "688783.SH",
+        "code": "688783.SH",
+        "name": "西安奕材",
+        "close": 16.64,
+        "change_pct": 4.0,
+        "amount": 23.69,
+        "amount_yi": 23.69,
+        "turnover_rate": 4.53,
+        "score": 99.7907,
+        "selected": true
+      },
+      {
+        "rank": 12,
+        "symbol": "603268.SH",
+        "code": "603268.SH",
+        "name": "松发股份",
+        "close": 164.8,
+        "change_pct": 5.65,
+        "amount": 20.03,
+        "amount_yi": 20.03,
+        "turnover_rate": 5.17,
+        "score": 99.7697,
+        "selected": true
+      },
+      {
+        "rank": 13,
+        "symbol": "001369.SZ",
+        "code": "001369.SZ",
+        "name": "双欣材料",
+        "close": 10.62,
+        "change_pct": -2.03,
+        "amount": 0.43,
+        "amount_yi": 0.43,
+        "turnover_rate": 1.95,
+        "score": 99.7488,
+        "selected": true
+      },
+      {
+        "rank": 14,
+        "symbol": "001248.SZ",
+        "code": "001248.SZ",
+        "name": "华润新能",
+        "close": 10.58,
+        "change_pct": -1.58,
+        "amount": 2.32,
+        "amount_yi": 2.32,
+        "turnover_rate": 2.05,
+        "score": 99.7279,
+        "selected": true
+      },
+      {
+        "rank": 15,
+        "symbol": "002197.SZ",
+        "code": "002197.SZ",
+        "name": "证通电子",
+        "close": 5.68,
+        "change_pct": -1.56,
+        "amount": 0.96,
+        "amount_yi": 0.96,
+        "turnover_rate": 3.12,
+        "score": 99.7069,
+        "selected": true
+      },
+      {
+        "rank": 16,
+        "symbol": "301338.SZ",
+        "code": "301338.SZ",
+        "name": "凯格精机",
+        "close": 63.83,
+        "change_pct": -2.07,
+        "amount": 2.89,
+        "amount_yi": 2.89,
+        "turnover_rate": 4.05,
+        "score": 99.686,
+        "selected": true
+      },
+      {
+        "rank": 17,
+        "symbol": "002348.SZ",
+        "code": "002348.SZ",
+        "name": "高乐股份",
+        "close": 7.12,
+        "change_pct": -1.79,
+        "amount": 1.88,
+        "amount_yi": 1.88,
+        "turnover_rate": 2.85,
+        "score": 99.6651,
+        "selected": true
+      },
+      {
+        "rank": 18,
+        "symbol": "688669.SH",
+        "code": "688669.SH",
+        "name": "聚石化学",
+        "close": 39.35,
+        "change_pct": -2.7,
+        "amount": 2.78,
+        "amount_yi": 2.78,
+        "turnover_rate": 5.63,
+        "score": 99.6441,
+        "selected": true
+      },
+      {
+        "rank": 19,
+        "symbol": "000422.SZ",
+        "code": "000422.SZ",
+        "name": "湖北宜化",
+        "close": 9.31,
+        "change_pct": -2.31,
+        "amount": 1.22,
+        "amount_yi": 1.22,
+        "turnover_rate": 1.22,
+        "score": 99.6232,
+        "selected": true
+      },
+      {
+        "rank": 20,
+        "symbol": "002350.SZ",
+        "code": "002350.SZ",
+        "name": "北京科锐",
+        "close": 11.58,
+        "change_pct": -1.53,
+        "amount": 0.49,
+        "amount_yi": 0.49,
+        "turnover_rate": 0.8,
+        "score": 99.6023,
+        "selected": true
+      },
+      {
+        "rank": 21,
+        "symbol": "600601.SH",
+        "code": "600601.SH",
+        "name": "方正科技",
+        "close": 9.4,
+        "change_pct": -2.49,
+        "amount": 33.52,
+        "amount_yi": 33.52,
+        "turnover_rate": 8.32,
+        "score": 99.5813,
+        "selected": true
+      },
+      {
+        "rank": 22,
+        "symbol": "603045.SH",
+        "code": "603045.SH",
+        "name": "福达合金",
+        "close": 33.36,
+        "change_pct": -1.8,
+        "amount": 1.46,
+        "amount_yi": 1.46,
+        "turnover_rate": 3.16,
+        "score": 99.5604,
+        "selected": true
+      },
+      {
+        "rank": 23,
+        "symbol": "002066.SZ",
+        "code": "002066.SZ",
+        "name": "瑞泰科技",
+        "close": 13.9,
+        "change_pct": -2.32,
+        "amount": 0.88,
+        "amount_yi": 0.88,
+        "turnover_rate": 2.67,
+        "score": 99.5395,
+        "selected": true
+      },
+      {
+        "rank": 24,
+        "symbol": "600120.SH",
+        "code": "600120.SH",
+        "name": "浙江东方",
+        "close": 4.19,
+        "change_pct": -2.33,
+        "amount": 1.47,
+        "amount_yi": 1.47,
+        "turnover_rate": 1.02,
+        "score": 99.5185,
+        "selected": true
+      },
+      {
+        "rank": 25,
+        "symbol": "300335.SZ",
+        "code": "300335.SZ",
+        "name": "迪森股份",
+        "close": 4.88,
+        "change_pct": -0.81,
+        "amount": 0.43,
+        "amount_yi": 0.43,
+        "turnover_rate": 2.31,
+        "score": 99.4976,
+        "selected": true
+      },
+      {
+        "rank": 26,
+        "symbol": "688808.SH",
+        "code": "688808.SH",
+        "name": "联讯仪器",
+        "close": 826.11,
+        "change_pct": -1.65,
+        "amount": 40.62,
+        "amount_yi": 40.62,
+        "turnover_rate": 15.48,
+        "score": 99.4767,
+        "selected": true
+      },
+      {
+        "rank": 27,
+        "symbol": "688828.SH",
+        "code": "688828.SH",
+        "name": "国仪公司",
+        "close": 71.28,
+        "change_pct": 2.65,
+        "amount": 2.78,
+        "amount_yi": 2.78,
+        "turnover_rate": 14.75,
+        "score": 99.4557,
+        "selected": true
+      },
+      {
+        "rank": 28,
+        "symbol": "301209.SZ",
+        "code": "301209.SZ",
+        "name": "联合化学",
+        "close": 44.81,
+        "change_pct": 7.25,
+        "amount": 4.92,
+        "amount_yi": 4.92,
+        "turnover_rate": 8.02,
+        "score": 99.4348,
+        "selected": true
+      },
+      {
+        "rank": 29,
+        "symbol": "002842.SZ",
+        "code": "002842.SZ",
+        "name": "翔鹭钨业",
+        "close": 24.66,
+        "change_pct": -2.45,
+        "amount": 3.68,
+        "amount_yi": 3.68,
+        "turnover_rate": 5.46,
+        "score": 99.4139,
+        "selected": true
+      },
+      {
+        "rank": 30,
+        "symbol": "603293.SH",
+        "code": "603293.SH",
+        "name": "埃泰克",
+        "close": 30.1,
+        "change_pct": -2.21,
+        "amount": 0.34,
+        "amount_yi": 0.34,
+        "turnover_rate": 3.1,
+        "score": 99.3929,
+        "selected": true
+      }
+    ],
     "buffer_total": 45,
     "buffer_rows": [
       {
@@ -58,596 +449,592 @@
         "symbol": "688809.SH",
         "code": "688809.SH",
         "name": "强一股份",
-        "close": 261.56,
-        "change_pct": 5.07,
-        "amount": 6.74,
-        "amount_yi": 6.74,
-        "turnover_rate": 7.32,
+        "close": 271.0,
+        "change_pct": 3.61,
+        "amount": 8.55,
+        "amount_yi": 8.55,
+        "turnover_rate": 8.61,
         "score": 100.0,
-        "selected": false
+        "selected": true
       },
       {
         "rank": 2,
-        "symbol": "688828.SH",
-        "code": "688828.SH",
-        "name": "国仪公司",
-        "close": 69.44,
-        "change_pct": 0.94,
-        "amount": 1.91,
-        "amount_yi": 1.91,
-        "turnover_rate": 10.49,
-        "score": 99.9791,
-        "selected": false
-      },
-      {
-        "rank": 3,
         "symbol": "300731.SZ",
         "code": "300731.SZ",
         "name": "科创新源",
-        "close": 28.49,
-        "change_pct": 4.4,
-        "amount": 1.6,
-        "amount_yi": 1.6,
-        "turnover_rate": 3.39,
-        "score": 99.9582,
-        "selected": false
+        "close": 27.78,
+        "change_pct": -2.49,
+        "amount": 1.7,
+        "amount_yi": 1.7,
+        "turnover_rate": 3.53,
+        "score": 99.9791,
+        "selected": true
+      },
+      {
+        "rank": 3,
+        "symbol": "000520.SZ",
+        "code": "000520.SZ",
+        "name": "凤凰航运",
+        "close": 2.84,
+        "change_pct": 1.07,
+        "amount": 1.62,
+        "amount_yi": 1.62,
+        "turnover_rate": 5.61,
+        "score": 99.9581,
+        "selected": true
       },
       {
         "rank": 4,
         "symbol": "300506.SZ",
         "code": "300506.SZ",
         "name": "名家汇",
-        "close": 3.41,
-        "change_pct": 0.29,
-        "amount": 0.56,
-        "amount_yi": 0.56,
-        "turnover_rate": 2.16,
-        "score": 99.9374,
-        "selected": false
+        "close": 3.33,
+        "change_pct": -2.35,
+        "amount": 0.69,
+        "amount_yi": 0.69,
+        "turnover_rate": 2.68,
+        "score": 99.9372,
+        "selected": true
       },
       {
         "rank": 5,
-        "symbol": "001237.SZ",
-        "code": "001237.SZ",
-        "name": "惠康科技",
-        "close": 43.54,
-        "change_pct": -0.5,
-        "amount": 0.29,
-        "amount_yi": 0.29,
-        "turnover_rate": 1.95,
-        "score": 99.9165,
-        "selected": false
+        "symbol": "601020.SH",
+        "code": "601020.SH",
+        "name": "华钰矿业",
+        "close": 14.23,
+        "change_pct": -4.94,
+        "amount": 2.83,
+        "amount_yi": 2.83,
+        "turnover_rate": 2.38,
+        "score": 99.9163,
+        "selected": true
       },
       {
         "rank": 6,
         "symbol": "300611.SZ",
         "code": "300611.SZ",
         "name": "美力科技",
-        "close": 20.78,
-        "change_pct": 4.53,
-        "amount": 1.23,
-        "amount_yi": 1.23,
-        "turnover_rate": 4.03,
-        "score": 99.8956,
-        "selected": false
+        "close": 20.1,
+        "change_pct": -3.27,
+        "amount": 1.06,
+        "amount_yi": 1.06,
+        "turnover_rate": 3.47,
+        "score": 99.8953,
+        "selected": true
       },
       {
         "rank": 7,
-        "symbol": "920038.BJ",
-        "code": "920038.BJ",
-        "name": "森合高科",
-        "close": 30.31,
-        "change_pct": -0.3,
-        "amount": 0.3,
-        "amount_yi": 0.3,
-        "turnover_rate": 1.9,
-        "score": 99.8747,
-        "selected": false
+        "symbol": "001237.SZ",
+        "code": "001237.SZ",
+        "name": "惠康科技",
+        "close": 42.98,
+        "change_pct": -1.29,
+        "amount": 0.32,
+        "amount_yi": 0.32,
+        "turnover_rate": 2.1,
+        "score": 99.8744,
+        "selected": true
       },
       {
         "rank": 8,
-        "symbol": "000520.SZ",
-        "code": "000520.SZ",
-        "name": "凤凰航运",
-        "close": 2.81,
-        "change_pct": -5.07,
-        "amount": 1.86,
-        "amount_yi": 1.86,
-        "turnover_rate": 6.5,
-        "score": 99.8539,
-        "selected": false
-      },
-      {
-        "rank": 9,
-        "symbol": "688783.SH",
-        "code": "688783.SH",
-        "name": "西安奕材",
-        "close": 16.0,
-        "change_pct": 2.43,
-        "amount": 11.58,
-        "amount_yi": 11.58,
-        "turnover_rate": 2.37,
-        "score": 99.833,
-        "selected": false
-      },
-      {
-        "rank": 10,
         "symbol": "603284.SH",
         "code": "603284.SH",
         "name": "林平发展",
-        "close": 35.09,
-        "change_pct": 0.26,
-        "amount": 0.22,
-        "amount_yi": 0.22,
-        "turnover_rate": 3.28,
-        "score": 99.8121,
-        "selected": false
+        "close": 34.6,
+        "change_pct": -1.4,
+        "amount": 0.24,
+        "amount_yi": 0.24,
+        "turnover_rate": 3.65,
+        "score": 99.8535,
+        "selected": true
       },
       {
-        "rank": 11,
+        "rank": 9,
         "symbol": "600711.SH",
         "code": "600711.SH",
         "name": "盛屯矿业",
-        "close": 8.38,
-        "change_pct": -0.83,
-        "amount": 4.57,
-        "amount_yi": 4.57,
-        "turnover_rate": 1.77,
-        "score": 99.7912,
-        "selected": false
+        "close": 8.07,
+        "change_pct": -3.7,
+        "amount": 5.62,
+        "amount_yi": 5.62,
+        "turnover_rate": 2.22,
+        "score": 99.8325,
+        "selected": true
       },
       {
-        "rank": 12,
+        "rank": 10,
         "symbol": "300835.SZ",
         "code": "300835.SZ",
         "name": "龙磁科技",
-        "close": 122.47,
-        "change_pct": 5.8,
-        "amount": 4.12,
-        "amount_yi": 4.12,
-        "turnover_rate": 4.17,
-        "score": 99.7704,
-        "selected": false
+        "close": 125.56,
+        "change_pct": 2.52,
+        "amount": 5.85,
+        "amount_yi": 5.85,
+        "turnover_rate": 5.51,
+        "score": 99.8116,
+        "selected": true
       },
       {
-        "rank": 13,
-        "symbol": "301209.SZ",
-        "code": "301209.SZ",
-        "name": "联合化学",
-        "close": 41.78,
-        "change_pct": 2.91,
-        "amount": 2.79,
-        "amount_yi": 2.79,
-        "turnover_rate": 5.14,
-        "score": 99.7495,
-        "selected": false
+        "rank": 11,
+        "symbol": "688783.SH",
+        "code": "688783.SH",
+        "name": "西安奕材",
+        "close": 16.64,
+        "change_pct": 4.0,
+        "amount": 23.69,
+        "amount_yi": 23.69,
+        "turnover_rate": 4.53,
+        "score": 99.7907,
+        "selected": true
       },
       {
-        "rank": 14,
-        "symbol": "000422.SZ",
-        "code": "000422.SZ",
-        "name": "湖北宜化",
-        "close": 9.53,
-        "change_pct": -0.31,
-        "amount": 0.73,
-        "amount_yi": 0.73,
-        "turnover_rate": 0.72,
-        "score": 99.7286,
-        "selected": false
-      },
-      {
-        "rank": 15,
-        "symbol": "001369.SZ",
-        "code": "001369.SZ",
-        "name": "双欣材料",
-        "close": 10.84,
-        "change_pct": -0.18,
-        "amount": 0.34,
-        "amount_yi": 0.34,
-        "turnover_rate": 1.51,
-        "score": 99.7077,
-        "selected": false
-      },
-      {
-        "rank": 16,
+        "rank": 12,
         "symbol": "603268.SH",
         "code": "603268.SH",
         "name": "松发股份",
-        "close": 155.99,
-        "change_pct": 3.22,
-        "amount": 10.34,
-        "amount_yi": 10.34,
-        "turnover_rate": 2.89,
-        "score": 99.6869,
-        "selected": false
+        "close": 164.8,
+        "change_pct": 5.65,
+        "amount": 20.03,
+        "amount_yi": 20.03,
+        "turnover_rate": 5.17,
+        "score": 99.7697,
+        "selected": true
       },
       {
-        "rank": 17,
-        "symbol": "600120.SH",
-        "code": "600120.SH",
-        "name": "浙江东方",
-        "close": 4.29,
-        "change_pct": -1.83,
-        "amount": 2.18,
-        "amount_yi": 2.18,
-        "turnover_rate": 1.49,
-        "score": 99.666,
-        "selected": false
+        "rank": 13,
+        "symbol": "001369.SZ",
+        "code": "001369.SZ",
+        "name": "双欣材料",
+        "close": 10.62,
+        "change_pct": -2.03,
+        "amount": 0.43,
+        "amount_yi": 0.43,
+        "turnover_rate": 1.95,
+        "score": 99.7488,
+        "selected": true
       },
       {
-        "rank": 18,
-        "symbol": "601020.SH",
-        "code": "601020.SH",
-        "name": "华钰矿业",
-        "close": 14.97,
-        "change_pct": 0.67,
-        "amount": 1.81,
-        "amount_yi": 1.81,
-        "turnover_rate": 1.5,
-        "score": 99.6451,
-        "selected": false
-      },
-      {
-        "rank": 19,
-        "symbol": "600595.SH",
-        "code": "600595.SH",
-        "name": "中孚实业",
-        "close": 5.33,
-        "change_pct": -1.66,
-        "amount": 4.84,
-        "amount_yi": 4.84,
-        "turnover_rate": 2.28,
-        "score": 99.6242,
-        "selected": false
-      },
-      {
-        "rank": 20,
-        "symbol": "002066.SZ",
-        "code": "002066.SZ",
-        "name": "瑞泰科技",
-        "close": 14.23,
-        "change_pct": 1.93,
-        "amount": 1.15,
-        "amount_yi": 1.15,
-        "turnover_rate": 3.53,
-        "score": 99.6033,
-        "selected": false
-      },
-      {
-        "rank": 21,
-        "symbol": "688669.SH",
-        "code": "688669.SH",
-        "name": "聚石化学",
-        "close": 40.44,
-        "change_pct": -2.32,
-        "amount": 2.48,
-        "amount_yi": 2.48,
-        "turnover_rate": 5.08,
-        "score": 99.5825,
-        "selected": false
-      },
-      {
-        "rank": 22,
-        "symbol": "002272.SZ",
-        "code": "002272.SZ",
-        "name": "川润股份",
-        "close": 12.24,
-        "change_pct": 1.92,
-        "amount": 1.78,
-        "amount_yi": 1.78,
-        "turnover_rate": 3.5,
-        "score": 99.5616,
-        "selected": false
-      },
-      {
-        "rank": 23,
-        "symbol": "603045.SH",
-        "code": "603045.SH",
-        "name": "福达合金",
-        "close": 33.97,
-        "change_pct": 2.78,
-        "amount": 1.46,
-        "amount_yi": 1.46,
-        "turnover_rate": 3.22,
-        "score": 99.5407,
-        "selected": false
-      },
-      {
-        "rank": 24,
-        "symbol": "300335.SZ",
-        "code": "300335.SZ",
-        "name": "迪森股份",
-        "close": 4.92,
-        "change_pct": 0.2,
-        "amount": 0.75,
-        "amount_yi": 0.75,
-        "turnover_rate": 3.99,
-        "score": 99.5198,
-        "selected": false
-      },
-      {
-        "rank": 25,
-        "symbol": "002197.SZ",
-        "code": "002197.SZ",
-        "name": "证通电子",
-        "close": 5.77,
-        "change_pct": 2.49,
-        "amount": 0.89,
-        "amount_yi": 0.89,
-        "turnover_rate": 2.93,
-        "score": 99.499,
-        "selected": false
-      },
-      {
-        "rank": 26,
-        "symbol": "600601.SH",
-        "code": "600601.SH",
-        "name": "方正科技",
-        "close": 9.64,
-        "change_pct": 6.17,
-        "amount": 29.54,
-        "amount_yi": 29.54,
-        "turnover_rate": 7.55,
-        "score": 99.4781,
-        "selected": false
-      },
-      {
-        "rank": 27,
-        "symbol": "301565.SZ",
-        "code": "301565.SZ",
-        "name": "中仑新材",
-        "close": 16.14,
-        "change_pct": 1.32,
-        "amount": 0.5,
-        "amount_yi": 0.5,
-        "turnover_rate": 2.42,
-        "score": 99.4572,
-        "selected": false
-      },
-      {
-        "rank": 28,
+        "rank": 14,
         "symbol": "001248.SZ",
         "code": "001248.SZ",
         "name": "华润新能",
-        "close": 10.75,
-        "change_pct": -0.09,
-        "amount": 2.02,
-        "amount_yi": 2.02,
-        "turnover_rate": 1.78,
-        "score": 99.4363,
-        "selected": false
+        "close": 10.58,
+        "change_pct": -1.58,
+        "amount": 2.32,
+        "amount_yi": 2.32,
+        "turnover_rate": 2.05,
+        "score": 99.7279,
+        "selected": true
+      },
+      {
+        "rank": 15,
+        "symbol": "002197.SZ",
+        "code": "002197.SZ",
+        "name": "证通电子",
+        "close": 5.68,
+        "change_pct": -1.56,
+        "amount": 0.96,
+        "amount_yi": 0.96,
+        "turnover_rate": 3.12,
+        "score": 99.7069,
+        "selected": true
+      },
+      {
+        "rank": 16,
+        "symbol": "301338.SZ",
+        "code": "301338.SZ",
+        "name": "凯格精机",
+        "close": 63.83,
+        "change_pct": -2.07,
+        "amount": 2.89,
+        "amount_yi": 2.89,
+        "turnover_rate": 4.05,
+        "score": 99.686,
+        "selected": true
+      },
+      {
+        "rank": 17,
+        "symbol": "002348.SZ",
+        "code": "002348.SZ",
+        "name": "高乐股份",
+        "close": 7.12,
+        "change_pct": -1.79,
+        "amount": 1.88,
+        "amount_yi": 1.88,
+        "turnover_rate": 2.85,
+        "score": 99.6651,
+        "selected": true
+      },
+      {
+        "rank": 18,
+        "symbol": "688669.SH",
+        "code": "688669.SH",
+        "name": "聚石化学",
+        "close": 39.35,
+        "change_pct": -2.7,
+        "amount": 2.78,
+        "amount_yi": 2.78,
+        "turnover_rate": 5.63,
+        "score": 99.6441,
+        "selected": true
+      },
+      {
+        "rank": 19,
+        "symbol": "000422.SZ",
+        "code": "000422.SZ",
+        "name": "湖北宜化",
+        "close": 9.31,
+        "change_pct": -2.31,
+        "amount": 1.22,
+        "amount_yi": 1.22,
+        "turnover_rate": 1.22,
+        "score": 99.6232,
+        "selected": true
+      },
+      {
+        "rank": 20,
+        "symbol": "002350.SZ",
+        "code": "002350.SZ",
+        "name": "北京科锐",
+        "close": 11.58,
+        "change_pct": -1.53,
+        "amount": 0.49,
+        "amount_yi": 0.49,
+        "turnover_rate": 0.8,
+        "score": 99.6023,
+        "selected": true
+      },
+      {
+        "rank": 21,
+        "symbol": "600601.SH",
+        "code": "600601.SH",
+        "name": "方正科技",
+        "close": 9.4,
+        "change_pct": -2.49,
+        "amount": 33.52,
+        "amount_yi": 33.52,
+        "turnover_rate": 8.32,
+        "score": 99.5813,
+        "selected": true
+      },
+      {
+        "rank": 22,
+        "symbol": "603045.SH",
+        "code": "603045.SH",
+        "name": "福达合金",
+        "close": 33.36,
+        "change_pct": -1.8,
+        "amount": 1.46,
+        "amount_yi": 1.46,
+        "turnover_rate": 3.16,
+        "score": 99.5604,
+        "selected": true
+      },
+      {
+        "rank": 23,
+        "symbol": "002066.SZ",
+        "code": "002066.SZ",
+        "name": "瑞泰科技",
+        "close": 13.9,
+        "change_pct": -2.32,
+        "amount": 0.88,
+        "amount_yi": 0.88,
+        "turnover_rate": 2.67,
+        "score": 99.5395,
+        "selected": true
+      },
+      {
+        "rank": 24,
+        "symbol": "600120.SH",
+        "code": "600120.SH",
+        "name": "浙江东方",
+        "close": 4.19,
+        "change_pct": -2.33,
+        "amount": 1.47,
+        "amount_yi": 1.47,
+        "turnover_rate": 1.02,
+        "score": 99.5185,
+        "selected": true
+      },
+      {
+        "rank": 25,
+        "symbol": "300335.SZ",
+        "code": "300335.SZ",
+        "name": "迪森股份",
+        "close": 4.88,
+        "change_pct": -0.81,
+        "amount": 0.43,
+        "amount_yi": 0.43,
+        "turnover_rate": 2.31,
+        "score": 99.4976,
+        "selected": true
+      },
+      {
+        "rank": 26,
+        "symbol": "688808.SH",
+        "code": "688808.SH",
+        "name": "联讯仪器",
+        "close": 826.11,
+        "change_pct": -1.65,
+        "amount": 40.62,
+        "amount_yi": 40.62,
+        "turnover_rate": 15.48,
+        "score": 99.4767,
+        "selected": true
+      },
+      {
+        "rank": 27,
+        "symbol": "688828.SH",
+        "code": "688828.SH",
+        "name": "国仪公司",
+        "close": 71.28,
+        "change_pct": 2.65,
+        "amount": 2.78,
+        "amount_yi": 2.78,
+        "turnover_rate": 14.75,
+        "score": 99.4557,
+        "selected": true
+      },
+      {
+        "rank": 28,
+        "symbol": "301209.SZ",
+        "code": "301209.SZ",
+        "name": "联合化学",
+        "close": 44.81,
+        "change_pct": 7.25,
+        "amount": 4.92,
+        "amount_yi": 4.92,
+        "turnover_rate": 8.02,
+        "score": 99.4348,
+        "selected": true
       },
       {
         "rank": 29,
         "symbol": "002842.SZ",
         "code": "002842.SZ",
         "name": "翔鹭钨业",
-        "close": 25.28,
-        "change_pct": 1.32,
-        "amount": 3.95,
-        "amount_yi": 3.95,
-        "turnover_rate": 5.91,
-        "score": 99.4155,
-        "selected": false
+        "close": 24.66,
+        "change_pct": -2.45,
+        "amount": 3.68,
+        "amount_yi": 3.68,
+        "turnover_rate": 5.46,
+        "score": 99.4139,
+        "selected": true
       },
       {
         "rank": 30,
         "symbol": "603293.SH",
         "code": "603293.SH",
         "name": "埃泰克",
-        "close": 30.78,
-        "change_pct": -0.23,
-        "amount": 0.22,
-        "amount_yi": 0.22,
-        "turnover_rate": 1.97,
-        "score": 99.3946,
-        "selected": false
+        "close": 30.1,
+        "change_pct": -2.21,
+        "amount": 0.34,
+        "amount_yi": 0.34,
+        "turnover_rate": 3.1,
+        "score": 99.3929,
+        "selected": true
       },
       {
         "rank": 31,
-        "symbol": "301219.SZ",
-        "code": "301219.SZ",
-        "name": "腾远钴业",
-        "close": 32.54,
-        "change_pct": 1.06,
-        "amount": 1.22,
-        "amount_yi": 1.22,
-        "turnover_rate": 1.38,
-        "score": 99.3737,
+        "symbol": "301565.SZ",
+        "code": "301565.SZ",
+        "name": "中仑新材",
+        "close": 15.78,
+        "change_pct": -2.23,
+        "amount": 0.47,
+        "amount_yi": 0.47,
+        "turnover_rate": 2.32,
+        "score": 99.372,
         "selected": false
       },
       {
         "rank": 32,
-        "symbol": "002348.SZ",
-        "code": "002348.SZ",
-        "name": "高乐股份",
-        "close": 7.25,
-        "change_pct": 1.97,
-        "amount": 1.98,
-        "amount_yi": 1.98,
-        "turnover_rate": 3.06,
-        "score": 99.3528,
+        "symbol": "688627.SH",
+        "code": "688627.SH",
+        "name": "精智达",
+        "close": 252.02,
+        "change_pct": 1.22,
+        "amount": 19.89,
+        "amount_yi": 19.89,
+        "turnover_rate": 8.16,
+        "score": 99.3511,
         "selected": false
       },
       {
         "rank": 33,
-        "symbol": "300891.SZ",
-        "code": "300891.SZ",
-        "name": "惠云钛业",
-        "close": 6.26,
-        "change_pct": 1.79,
-        "amount": 0.38,
-        "amount_yi": 0.38,
-        "turnover_rate": 1.82,
-        "score": 99.3319,
+        "symbol": "301013.SZ",
+        "code": "301013.SZ",
+        "name": "利和兴",
+        "close": 25.92,
+        "change_pct": -3.03,
+        "amount": 3.75,
+        "amount_yi": 3.75,
+        "turnover_rate": 7.43,
+        "score": 99.3301,
         "selected": false
       },
       {
         "rank": 34,
-        "symbol": "301013.SZ",
-        "code": "301013.SZ",
-        "name": "利和兴",
-        "close": 26.73,
-        "change_pct": 4.17,
-        "amount": 3.48,
-        "amount_yi": 3.48,
-        "turnover_rate": 7.02,
-        "score": 99.3111,
+        "symbol": "920038.BJ",
+        "code": "920038.BJ",
+        "name": "森合高科",
+        "close": 29.9,
+        "change_pct": -1.35,
+        "amount": 0.27,
+        "amount_yi": 0.27,
+        "turnover_rate": 1.68,
+        "score": 99.3092,
         "selected": false
       },
       {
         "rank": 35,
-        "symbol": "301111.SZ",
-        "code": "301111.SZ",
-        "name": "粤万年青",
-        "close": 17.35,
-        "change_pct": 1.4,
-        "amount": 0.92,
-        "amount_yi": 0.92,
-        "turnover_rate": 3.35,
-        "score": 99.2902,
+        "symbol": "301219.SZ",
+        "code": "301219.SZ",
+        "name": "腾远钴业",
+        "close": 31.67,
+        "change_pct": -2.67,
+        "amount": 1.31,
+        "amount_yi": 1.31,
+        "turnover_rate": 1.49,
+        "score": 99.2883,
         "selected": false
       },
       {
         "rank": 36,
-        "symbol": "603876.SH",
-        "code": "603876.SH",
-        "name": "鼎胜新材",
-        "close": 13.89,
-        "change_pct": 0.43,
-        "amount": 3.46,
-        "amount_yi": 3.46,
-        "turnover_rate": 2.7,
-        "score": 99.2693,
+        "symbol": "301111.SZ",
+        "code": "301111.SZ",
+        "name": "粤万年青",
+        "close": 17.4,
+        "change_pct": 0.29,
+        "amount": 0.85,
+        "amount_yi": 0.85,
+        "turnover_rate": 3.02,
+        "score": 99.2673,
         "selected": false
       },
       {
         "rank": 37,
-        "symbol": "600589.SH",
-        "code": "600589.SH",
-        "name": "大位科技",
-        "close": 6.46,
-        "change_pct": 1.1,
-        "amount": 2.27,
-        "amount_yi": 2.27,
-        "turnover_rate": 2.39,
-        "score": 99.2484,
+        "symbol": "300131.SZ",
+        "code": "300131.SZ",
+        "name": "英唐智控",
+        "close": 10.42,
+        "change_pct": -1.51,
+        "amount": 4.84,
+        "amount_yi": 4.84,
+        "turnover_rate": 4.28,
+        "score": 99.2464,
         "selected": false
       },
       {
         "rank": 38,
-        "symbol": "300265.SZ",
-        "code": "300265.SZ",
-        "name": "通光线缆",
-        "close": 10.27,
-        "change_pct": 1.78,
-        "amount": 1.33,
-        "amount_yi": 1.33,
-        "turnover_rate": 2.8,
-        "score": 99.2276,
+        "symbol": "002114.SZ",
+        "code": "002114.SZ",
+        "name": "罗平锌电",
+        "close": 6.0,
+        "change_pct": -1.48,
+        "amount": 0.27,
+        "amount_yi": 0.27,
+        "turnover_rate": 1.38,
+        "score": 99.2255,
         "selected": false
       },
       {
         "rank": 39,
-        "symbol": "600183.SH",
-        "code": "600183.SH",
-        "name": "生益科技",
-        "close": 76.88,
-        "change_pct": 8.39,
-        "amount": 103.07,
-        "amount_yi": 103.07,
-        "turnover_rate": 5.82,
-        "score": 99.2067,
+        "symbol": "600589.SH",
+        "code": "600589.SH",
+        "name": "大位科技",
+        "close": 6.31,
+        "change_pct": -2.32,
+        "amount": 2.76,
+        "amount_yi": 2.76,
+        "turnover_rate": 2.9,
+        "score": 99.2045,
         "selected": false
       },
       {
         "rank": 40,
-        "symbol": "002114.SZ",
-        "code": "002114.SZ",
-        "name": "罗平锌电",
-        "close": 6.09,
-        "change_pct": 1.84,
-        "amount": 0.29,
-        "amount_yi": 0.29,
-        "turnover_rate": 1.5,
-        "score": 99.1858,
+        "symbol": "000811.SZ",
+        "code": "000811.SZ",
+        "name": "冰轮环境",
+        "close": 24.81,
+        "change_pct": -1.31,
+        "amount": 12.61,
+        "amount_yi": 12.61,
+        "turnover_rate": 4.99,
+        "score": 99.1836,
         "selected": false
       },
       {
         "rank": 41,
-        "symbol": "600567.SH",
-        "code": "600567.SH",
-        "name": "山鹰国际",
-        "close": 1.03,
-        "change_pct": -0.96,
-        "amount": 1.12,
-        "amount_yi": 1.12,
-        "turnover_rate": 1.74,
-        "score": 99.1649,
+        "symbol": "600183.SH",
+        "code": "600183.SH",
+        "name": "生益科技",
+        "close": 75.71,
+        "change_pct": -1.52,
+        "amount": 98.32,
+        "amount_yi": 98.32,
+        "turnover_rate": 5.19,
+        "score": 99.1627,
         "selected": false
       },
       {
         "rank": 42,
-        "symbol": "688627.SH",
-        "code": "688627.SH",
-        "name": "精智达",
-        "close": 248.99,
-        "change_pct": 7.39,
-        "amount": 14.25,
-        "amount_yi": 14.25,
-        "turnover_rate": 6.3,
-        "score": 99.1441,
+        "symbol": "300891.SZ",
+        "code": "300891.SZ",
+        "name": "惠云钛业",
+        "close": 6.15,
+        "change_pct": -1.76,
+        "amount": 0.35,
+        "amount_yi": 0.35,
+        "turnover_rate": 1.68,
+        "score": 99.1417,
         "selected": false
       },
       {
         "rank": 43,
-        "symbol": "605055.SH",
-        "code": "605055.SH",
-        "name": "迎丰股份",
-        "close": 7.91,
-        "change_pct": 3.53,
-        "amount": 0.35,
-        "amount_yi": 0.35,
-        "turnover_rate": 1.02,
-        "score": 99.1232,
+        "symbol": "603876.SH",
+        "code": "603876.SH",
+        "name": "鼎胜新材",
+        "close": 13.62,
+        "change_pct": -1.94,
+        "amount": 3.31,
+        "amount_yi": 3.31,
+        "turnover_rate": 2.57,
+        "score": 99.1208,
         "selected": false
       },
       {
         "rank": 44,
-        "symbol": "002545.SZ",
-        "code": "002545.SZ",
-        "name": "东方铁塔",
-        "close": 11.74,
-        "change_pct": 0.17,
-        "amount": 2.22,
-        "amount_yi": 2.22,
-        "turnover_rate": 1.67,
-        "score": 99.1023,
+        "symbol": "000830.SZ",
+        "code": "000830.SZ",
+        "name": "鲁西化工",
+        "close": 10.35,
+        "change_pct": -1.9,
+        "amount": 2.98,
+        "amount_yi": 2.98,
+        "turnover_rate": 1.5,
+        "score": 99.0999,
         "selected": false
       },
       {
         "rank": 45,
-        "symbol": "001389.SZ",
-        "code": "001389.SZ",
-        "name": "广合科技",
-        "close": 98.35,
-        "change_pct": 6.9,
-        "amount": 14.49,
-        "amount_yi": 14.49,
-        "turnover_rate": 9.96,
-        "score": 99.0814,
+        "symbol": "600567.SH",
+        "code": "600567.SH",
+        "name": "山鹰国际",
+        "close": 1.01,
+        "change_pct": -1.94,
+        "amount": 1.75,
+        "amount_yi": 1.75,
+        "turnover_rate": 2.77,
+        "score": 99.0789,
         "selected": false
       }
     ],
-    "signal_enabled": false,
+    "signal_enabled": true,
     "error": null
   },
   "equity": [
     {
-      "d": "2024-10-22",
-      "nav": 1000000.0
-    },
-    {
       "d": "2024-10-23",
       "nav": 1000000.0
     },
@@ -661,3989 +1048,3993 @@
     },
     {
       "d": "2024-10-28",
-      "nav": 1034615.74
+      "nav": 1033829.15
     },
     {
       "d": "2024-10-29",
-      "nav": 1017732.46
+      "nav": 1017043.46
     },
     {
       "d": "2024-10-30",
-      "nav": 1023671.13
+      "nav": 1022881.16
     },
     {
       "d": "2024-10-31",
-      "nav": 1048549.9
+      "nav": 1047770.96
     },
     {
       "d": "2024-11-01",
-      "nav": 1001658.39
+      "nav": 1002131.86
     },
     {
       "d": "2024-11-04",
-      "nav": 1020985.94
+      "nav": 1020802.57
     },
     {
       "d": "2024-11-05",
-      "nav": 1053688.05
+      "nav": 1051885.33
     },
     {
       "d": "2024-11-06",
-      "nav": 1062838.61
+      "nav": 1062254.8
     },
     {
       "d": "2024-11-07",
-      "nav": 1082309.63
+      "nav": 1077595.75
     },
     {
       "d": "2024-11-08",
-      "nav": 1099829.52
+      "nav": 1091676.07
     },
     {
       "d": "2024-11-11",
-      "nav": 1136777.26
+      "nav": 1127481.56
     },
     {
       "d": "2024-11-12",
-      "nav": 1129533.22
+      "nav": 1120296.75
     },
     {
       "d": "2024-11-13",
-      "nav": 1140730.38
+      "nav": 1131402.35
     },
     {
       "d": "2024-11-14",
-      "nav": 1114394.38
+      "nav": 1105281.7
     },
     {
       "d": "2024-11-15",
-      "nav": 1095887.64
+      "nav": 1086926.3
     },
     {
       "d": "2024-11-18",
-      "nav": 1080419.64
+      "nav": 1070155.12
     },
     {
       "d": "2024-11-19",
-      "nav": 1110792.52
+      "nav": 1101868.01
     },
     {
       "d": "2024-11-20",
-      "nav": 1136812.86
+      "nav": 1129631.04
     },
     {
       "d": "2024-11-21",
-      "nav": 1142990.11
+      "nav": 1139668.71
     },
     {
       "d": "2024-11-22",
-      "nav": 1102148.9
+      "nav": 1098750.52
     },
     {
       "d": "2024-11-25",
-      "nav": 1117890.31
+      "nav": 1114461.17
     },
     {
       "d": "2024-11-26",
-      "nav": 1114653.63
+      "nav": 1111234.42
     },
     {
       "d": "2024-11-27",
-      "nav": 1137126.43
+      "nav": 1133638.28
     },
     {
       "d": "2024-11-28",
-      "nav": 1140623.43
+      "nav": 1137124.56
     },
     {
       "d": "2024-11-29",
-      "nav": 1162218.53
+      "nav": 1158653.41
     },
     {
       "d": "2024-12-02",
-      "nav": 1190124.16
+      "nav": 1186519.46
     },
     {
       "d": "2024-12-03",
-      "nav": 1203159.37
+      "nav": 1199580.97
     },
     {
       "d": "2024-12-04",
-      "nav": 1194377.53
+      "nav": 1190594.1
     },
     {
       "d": "2024-12-05",
-      "nav": 1214856.41
+      "nav": 1211315.77
     },
     {
       "d": "2024-12-06",
-      "nav": 1228308.0
+      "nav": 1224658.26
     },
     {
       "d": "2024-12-09",
-      "nav": 1227125.38
+      "nav": 1223777.33
     },
     {
       "d": "2024-12-10",
-      "nav": 1237610.82
+      "nav": 1233561.86
     },
     {
       "d": "2024-12-11",
-      "nav": 1246966.91
+      "nav": 1243221.75
     },
     {
       "d": "2024-12-12",
-      "nav": 1264598.51
+      "nav": 1261196.5
     },
     {
       "d": "2024-12-13",
-      "nav": 1241808.89
+      "nav": 1239194.5
     },
     {
       "d": "2024-12-16",
-      "nav": 1231500.64
+      "nav": 1227409.09
     },
     {
       "d": "2024-12-17",
-      "nav": 1198010.34
+      "nav": 1194284.39
     },
     {
       "d": "2024-12-18",
-      "nav": 1204322.5
+      "nav": 1200322.81
     },
     {
       "d": "2024-12-19",
-      "nav": 1205758.76
+      "nav": 1203151.06
     },
     {
       "d": "2024-12-20",
-      "nav": 1217283.6
+      "nav": 1214749.61
     },
     {
       "d": "2024-12-23",
-      "nav": 1211241.34
+      "nav": 1208595.69
     },
     {
       "d": "2024-12-24",
-      "nav": 1215012.39
+      "nav": 1211705.9
     },
     {
       "d": "2024-12-25",
-      "nav": 1190577.29
+      "nav": 1187383.49
     },
     {
       "d": "2024-12-26",
-      "nav": 1193406.57
+      "nav": 1191129.52
     },
     {
       "d": "2024-12-27",
-      "nav": 1200960.88
+      "nav": 1199355.57
     },
     {
       "d": "2024-12-30",
-      "nav": 1185627.85
+      "nav": 1183789.81
     },
     {
       "d": "2024-12-31",
-      "nav": 1159979.33
+      "nav": 1158234.13
     },
     {
       "d": "2025-01-02",
-      "nav": 1136895.96
+      "nav": 1135265.55
     },
     {
       "d": "2025-01-03",
-      "nav": 1096227.17
+      "nav": 1093522.32
     },
     {
       "d": "2025-01-06",
-      "nav": 1096943.44
+      "nav": 1093805.97
     },
     {
       "d": "2025-01-07",
-      "nav": 1125454.17
+      "nav": 1123483.01
     },
     {
       "d": "2025-01-08",
-      "nav": 1114689.07
+      "nav": 1113175.79
     },
     {
       "d": "2025-01-09",
-      "nav": 1127865.22
+      "nav": 1126041.27
     },
     {
       "d": "2025-01-10",
-      "nav": 1097233.93
+      "nav": 1094890.26
     },
     {
       "d": "2025-01-13",
-      "nav": 1111235.01
+      "nav": 1108965.71
     },
     {
       "d": "2025-01-14",
-      "nav": 1169115.34
+      "nav": 1166727.83
     },
     {
       "d": "2025-01-15",
-      "nav": 1153366.08
+      "nav": 1151010.73
     },
     {
       "d": "2025-01-16",
-      "nav": 1161495.24
+      "nav": 1159123.29
     },
     {
       "d": "2025-01-17",
-      "nav": 1164604.52
+      "nav": 1162226.23
     },
     {
       "d": "2025-01-20",
-      "nav": 1177958.46
+      "nav": 1175552.9
     },
     {
       "d": "2025-01-21",
-      "nav": 1175220.93
+      "nav": 1172820.96
     },
     {
       "d": "2025-01-22",
-      "nav": 1164234.27
+      "nav": 1161856.73
     },
     {
       "d": "2025-01-23",
-      "nav": 1160257.68
+      "nav": 1157888.26
     },
     {
       "d": "2025-01-24",
-      "nav": 1172049.0
+      "nav": 1169655.51
     },
     {
       "d": "2025-01-27",
-      "nav": 1148467.5
+      "nav": 1146122.16
     },
     {
       "d": "2025-02-05",
-      "nav": 1195277.91
+      "nav": 1192836.97
     },
     {
       "d": "2025-02-06",
-      "nav": 1230791.86
+      "nav": 1228278.4
     },
     {
       "d": "2025-02-07",
-      "nav": 1267341.3
+      "nav": 1264753.2
     },
     {
       "d": "2025-02-10",
-      "nav": 1331843.86
+      "nav": 1329124.04
     },
     {
       "d": "2025-02-11",
-      "nav": 1311219.43
+      "nav": 1308541.72
     },
     {
       "d": "2025-02-12",
-      "nav": 1323073.57
+      "nav": 1320371.66
     },
     {
       "d": "2025-02-13",
-      "nav": 1319171.29
+      "nav": 1316477.35
     },
     {
       "d": "2025-02-14",
-      "nav": 1302068.01
+      "nav": 1299408.99
     },
     {
       "d": "2025-02-17",
-      "nav": 1357865.8
+      "nav": 1355092.84
     },
     {
       "d": "2025-02-18",
-      "nav": 1337722.74
+      "nav": 1334990.91
     },
     {
       "d": "2025-02-19",
-      "nav": 1367085.36
+      "nav": 1364293.57
     },
     {
       "d": "2025-02-20",
-      "nav": 1376352.98
+      "nav": 1373542.27
     },
     {
       "d": "2025-02-21",
-      "nav": 1374953.83
+      "nav": 1372145.97
     },
     {
       "d": "2025-02-24",
-      "nav": 1394560.89
+      "nav": 1392134.26
     },
     {
       "d": "2025-02-25",
-      "nav": 1404400.3
+      "nav": 1402511.03
     },
     {
       "d": "2025-02-26",
-      "nav": 1434666.06
+      "nav": 1432877.99
     },
     {
       "d": "2025-02-27",
-      "nav": 1428903.91
+      "nav": 1427146.53
     },
     {
       "d": "2025-02-28",
-      "nav": 1398014.7
+      "nav": 1397347.98
     },
     {
       "d": "2025-03-03",
-      "nav": 1383652.01
+      "nav": 1390055.45
     },
     {
       "d": "2025-03-04",
-      "nav": 1400749.59
+      "nav": 1407232.15
     },
     {
       "d": "2025-03-05",
-      "nav": 1405333.46
+      "nav": 1411837.24
     },
     {
       "d": "2025-03-06",
-      "nav": 1422486.65
+      "nav": 1429069.81
     },
     {
       "d": "2025-03-07",
-      "nav": 1413981.26
+      "nav": 1420525.06
     },
     {
       "d": "2025-03-10",
-      "nav": 1447560.19
+      "nav": 1454259.39
     },
     {
       "d": "2025-03-11",
-      "nav": 1448376.21
+      "nav": 1455079.18
     },
     {
       "d": "2025-03-12",
-      "nav": 1449147.12
+      "nav": 1455853.67
     },
     {
       "d": "2025-03-13",
-      "nav": 1447189.27
+      "nav": 1453886.75
     },
     {
       "d": "2025-03-14",
-      "nav": 1480294.73
+      "nav": 1487145.42
     },
     {
       "d": "2025-03-17",
-      "nav": 1490483.2
+      "nav": 1497381.05
     },
     {
       "d": "2025-03-18",
-      "nav": 1502317.15
+      "nav": 1509269.76
     },
     {
       "d": "2025-03-19",
-      "nav": 1495173.65
+      "nav": 1502093.2
     },
     {
       "d": "2025-03-20",
-      "nav": 1496173.6
+      "nav": 1503097.78
     },
     {
       "d": "2025-03-21",
-      "nav": 1487501.57
+      "nav": 1494385.61
     },
     {
       "d": "2025-03-24",
-      "nav": 1460873.87
+      "nav": 1464523.6
     },
     {
       "d": "2025-03-25",
-      "nav": 1462250.96
+      "nav": 1468287.27
     },
     {
       "d": "2025-03-26",
-      "nav": 1468835.78
+      "nav": 1481294.05
     },
     {
       "d": "2025-03-27",
-      "nav": 1469572.16
+      "nav": 1483326.79
     },
     {
       "d": "2025-03-28",
-      "nav": 1450166.63
+      "nav": 1462648.71
     },
     {
       "d": "2025-03-31",
-      "nav": 1430931.93
+      "nav": 1444187.99
     },
     {
       "d": "2025-04-01",
-      "nav": 1454873.98
+      "nav": 1470389.28
     },
     {
       "d": "2025-04-02",
-      "nav": 1446895.9
+      "nav": 1462220.38
     },
     {
       "d": "2025-04-03",
-      "nav": 1445886.53
+      "nav": 1461047.08
     },
     {
       "d": "2025-04-07",
-      "nav": 1277941.09
+      "nav": 1290278.21
     },
     {
       "d": "2025-04-08",
-      "nav": 1278165.57
+      "nav": 1294332.32
     },
     {
       "d": "2025-04-09",
-      "nav": 1311830.95
+      "nav": 1329309.7
     },
     {
       "d": "2025-04-10",
-      "nav": 1355314.56
+      "nav": 1372622.81
     },
     {
       "d": "2025-04-11",
-      "nav": 1379310.93
+      "nav": 1397395.42
     },
     {
       "d": "2025-04-14",
-      "nav": 1405939.01
+      "nav": 1423407.0
     },
     {
       "d": "2025-04-15",
-      "nav": 1409905.25
+      "nav": 1427422.51
     },
     {
       "d": "2025-04-16",
-      "nav": 1383201.03
+      "nav": 1400386.51
     },
     {
       "d": "2025-04-17",
-      "nav": 1383256.92
+      "nav": 1400443.1
     },
     {
       "d": "2025-04-18",
-      "nav": 1374046.14
+      "nav": 1391117.88
     },
     {
       "d": "2025-04-21",
-      "nav": 1406013.19
+      "nav": 1423482.1
     },
     {
       "d": "2025-04-22",
-      "nav": 1410951.84
+      "nav": 1428482.11
     },
     {
       "d": "2025-04-23",
-      "nav": 1419386.81
+      "nav": 1437021.89
     },
     {
       "d": "2025-04-24",
-      "nav": 1397300.07
+      "nav": 1414660.73
     },
     {
       "d": "2025-04-25",
-      "nav": 1406090.63
+      "nav": 1423560.51
     },
     {
       "d": "2025-04-28",
-      "nav": 1372065.38
+      "nav": 1389112.51
     },
     {
       "d": "2025-04-29",
-      "nav": 1370107.48
+      "nav": 1387130.29
     },
     {
       "d": "2025-04-30",
-      "nav": 1388275.51
+      "nav": 1405524.04
     },
     {
       "d": "2025-05-06",
-      "nav": 1412242.1
+      "nav": 1429788.41
     },
     {
       "d": "2025-05-07",
-      "nav": 1414956.99
+      "nav": 1432537.02
     },
     {
       "d": "2025-05-08",
-      "nav": 1430066.84
+      "nav": 1447834.61
     },
     {
       "d": "2025-05-09",
-      "nav": 1424711.97
+      "nav": 1442413.21
     },
     {
       "d": "2025-05-12",
-      "nav": 1447025.15
+      "nav": 1465026.51
     },
     {
       "d": "2025-05-13",
-      "nav": 1448148.17
+      "nav": 1466595.67
     },
     {
       "d": "2025-05-14",
-      "nav": 1441704.84
+      "nav": 1460996.68
     },
     {
       "d": "2025-05-15",
-      "nav": 1413773.97
+      "nav": 1434169.14
     },
     {
       "d": "2025-05-16",
-      "nav": 1424795.65
+      "nav": 1448833.1
     },
     {
       "d": "2025-05-19",
-      "nav": 1431250.14
+      "nav": 1454363.25
     },
     {
       "d": "2025-05-20",
-      "nav": 1445194.41
+      "nav": 1468318.45
     },
     {
       "d": "2025-05-21",
-      "nav": 1436727.9
+      "nav": 1459319.92
     },
     {
       "d": "2025-05-22",
-      "nav": 1425568.26
+      "nav": 1443560.0
     },
     {
       "d": "2025-05-23",
-      "nav": 1404651.98
+      "nav": 1421023.94
     },
     {
       "d": "2025-05-26",
-      "nav": 1420857.7
+      "nav": 1437408.63
     },
     {
       "d": "2025-05-27",
-      "nav": 1418072.42
+      "nav": 1434452.46
     },
     {
       "d": "2025-05-28",
-      "nav": 1409293.79
+      "nav": 1425970.78
     },
     {
       "d": "2025-05-29",
-      "nav": 1437653.92
+      "nav": 1454412.57
     },
     {
       "d": "2025-05-30",
-      "nav": 1415699.89
+      "nav": 1432804.61
     },
     {
       "d": "2025-06-03",
-      "nav": 1424128.17
+      "nav": 1441665.99
     },
     {
       "d": "2025-06-04",
-      "nav": 1446753.95
+      "nav": 1464570.39
     },
     {
       "d": "2025-06-05",
-      "nav": 1456382.33
+      "nav": 1474317.34
     },
     {
       "d": "2025-06-06",
-      "nav": 1454776.72
+      "nav": 1472691.97
     },
     {
       "d": "2025-06-09",
-      "nav": 1476093.79
+      "nav": 1494271.55
     },
     {
       "d": "2025-06-10",
-      "nav": 1457832.18
+      "nav": 1475785.05
     },
     {
       "d": "2025-06-11",
-      "nav": 1472935.2
+      "nav": 1491074.06
     },
     {
       "d": "2025-06-12",
-      "nav": 1485029.18
+      "nav": 1503316.98
     },
     {
       "d": "2025-06-13",
-      "nav": 1457457.25
+      "nav": 1475405.51
     },
     {
       "d": "2025-06-16",
-      "nav": 1475566.69
+      "nav": 1493737.96
     },
     {
       "d": "2025-06-17",
-      "nav": 1476468.72
+      "nav": 1494651.1
     },
     {
       "d": "2025-06-18",
-      "nav": 1505847.03
+      "nav": 1524391.19
     },
     {
       "d": "2025-06-19",
-      "nav": 1495913.34
+      "nav": 1514335.17
     },
     {
       "d": "2025-06-20",
-      "nav": 1481918.42
+      "nav": 1500167.91
     },
     {
       "d": "2025-06-23",
-      "nav": 1497471.23
+      "nav": 1515912.24
     },
     {
       "d": "2025-06-24",
-      "nav": 1550187.73
+      "nav": 1569277.94
     },
     {
       "d": "2025-06-25",
-      "nav": 1589318.15
+      "nav": 1608890.24
     },
     {
       "d": "2025-06-26",
-      "nav": 1579614.01
+      "nav": 1599066.6
     },
     {
       "d": "2025-06-27",
-      "nav": 1589342.08
+      "nav": 1608914.46
     },
     {
       "d": "2025-06-30",
-      "nav": 1607429.35
+      "nav": 1626270.59
     },
     {
       "d": "2025-07-01",
-      "nav": 1596483.74
+      "nav": 1615512.95
     },
     {
       "d": "2025-07-02",
-      "nav": 1585443.79
+      "nav": 1605352.37
     },
     {
       "d": "2025-07-03",
-      "nav": 1583049.73
+      "nav": 1602024.53
     },
     {
       "d": "2025-07-04",
-      "nav": 1564242.56
+      "nav": 1580993.29
     },
     {
       "d": "2025-07-07",
-      "nav": 1567452.58
+      "nav": 1584172.36
     },
     {
       "d": "2025-07-08",
-      "nav": 1592808.19
+      "nav": 1609798.43
     },
     {
       "d": "2025-07-09",
-      "nav": 1594918.61
+      "nav": 1611931.36
     },
     {
       "d": "2025-07-10",
-      "nav": 1593327.33
+      "nav": 1610323.11
     },
     {
       "d": "2025-07-11",
-      "nav": 1615628.9
+      "nav": 1632862.57
     },
     {
       "d": "2025-07-14",
-      "nav": 1631718.68
+      "nav": 1649051.44
     },
     {
       "d": "2025-07-15",
-      "nav": 1629626.04
+      "nav": 1642462.86
     },
     {
       "d": "2025-07-16",
-      "nav": 1656174.96
+      "nav": 1668996.17
     },
     {
       "d": "2025-07-17",
-      "nav": 1682467.69
+      "nav": 1695714.43
     },
     {
       "d": "2025-07-18",
-      "nav": 1692827.08
+      "nav": 1707108.54
     },
     {
       "d": "2025-07-21",
-      "nav": 1727437.96
+      "nav": 1742112.1
     },
     {
       "d": "2025-07-22",
-      "nav": 1732822.85
+      "nav": 1747772.7
     },
     {
       "d": "2025-07-23",
-      "nav": 1722439.9
+      "nav": 1736960.32
     },
     {
       "d": "2025-07-24",
-      "nav": 1744782.98
+      "nav": 1759868.07
     },
     {
       "d": "2025-07-25",
-      "nav": 1757071.81
+      "nav": 1771112.83
     },
     {
       "d": "2025-07-28",
-      "nav": 1760870.19
+      "nav": 1779289.96
     },
     {
       "d": "2025-07-29",
-      "nav": 1771440.73
+      "nav": 1791019.04
     },
     {
       "d": "2025-07-30",
-      "nav": 1762554.23
+      "nav": 1780777.89
     },
     {
       "d": "2025-07-31",
-      "nav": 1761614.09
+      "nav": 1782484.3
     },
     {
       "d": "2025-08-01",
-      "nav": 1766102.08
+      "nav": 1786590.81
     },
     {
       "d": "2025-08-04",
-      "nav": 1791109.54
+      "nav": 1813474.99
     },
     {
       "d": "2025-08-05",
-      "nav": 1800041.36
+      "nav": 1822693.43
     },
     {
       "d": "2025-08-06",
-      "nav": 1833037.19
+      "nav": 1856882.7
     },
     {
       "d": "2025-08-07",
-      "nav": 1835943.3
+      "nav": 1860426.02
     },
     {
       "d": "2025-08-08",
-      "nav": 1823332.2
+      "nav": 1846800.17
     },
     {
       "d": "2025-08-11",
-      "nav": 1850142.39
+      "nav": 1873661.73
     },
     {
       "d": "2025-08-12",
-      "nav": 1859235.98
+      "nav": 1882870.92
     },
     {
       "d": "2025-08-13",
-      "nav": 1883050.85
+      "nav": 1906988.52
     },
     {
       "d": "2025-08-14",
-      "nav": 1851072.45
+      "nav": 1874603.61
     },
     {
       "d": "2025-08-15",
-      "nav": 1884450.29
+      "nav": 1908405.75
     },
     {
       "d": "2025-08-18",
-      "nav": 1941947.7
+      "nav": 1966634.08
     },
     {
       "d": "2025-08-19",
-      "nav": 1971758.46
+      "nav": 1996823.8
     },
     {
       "d": "2025-08-20",
-      "nav": 1994007.61
+      "nav": 2019355.79
     },
     {
       "d": "2025-08-21",
-      "nav": 1995218.19
+      "nav": 2020581.75
     },
     {
       "d": "2025-08-22",
-      "nav": 2038851.18
+      "nav": 2064769.41
     },
     {
       "d": "2025-08-25",
-      "nav": 2081393.7
+      "nav": 2106574.84
     },
     {
       "d": "2025-08-26",
-      "nav": 2099280.67
+      "nav": 2124701.24
     },
     {
       "d": "2025-08-27",
-      "nav": 2046821.74
+      "nav": 2076685.1
     },
     {
       "d": "2025-08-28",
-      "nav": 2068011.89
+      "nav": 2098132.57
     },
     {
       "d": "2025-08-29",
-      "nav": 2069627.44
+      "nav": 2102574.51
     },
     {
       "d": "2025-09-01",
-      "nav": 2098489.73
+      "nav": 2132621.15
     },
     {
       "d": "2025-09-02",
-      "nav": 2097987.56
+      "nav": 2132110.82
     },
     {
       "d": "2025-09-03",
-      "nav": 2081291.39
+      "nav": 2115143.08
     },
     {
       "d": "2025-09-04",
-      "nav": 2096584.28
+      "nav": 2130684.72
     },
     {
       "d": "2025-09-05",
-      "nav": 2149924.08
+      "nav": 2184892.07
     },
     {
       "d": "2025-09-08",
-      "nav": 2194901.88
+      "nav": 2230815.38
     },
     {
       "d": "2025-09-09",
-      "nav": 2168958.64
+      "nav": 2205095.99
     },
     {
       "d": "2025-09-10",
-      "nav": 2169205.61
+      "nav": 2205282.11
     },
     {
       "d": "2025-09-11",
-      "nav": 2194386.57
+      "nav": 2230732.24
     },
     {
       "d": "2025-09-12",
-      "nav": 2190348.01
+      "nav": 2227184.72
     },
     {
       "d": "2025-09-15",
-      "nav": 2193597.16
+      "nav": 2229281.43
     },
     {
       "d": "2025-09-16",
-      "nav": 2220903.95
+      "nav": 2254674.19
     },
     {
       "d": "2025-09-17",
-      "nav": 2267237.48
+      "nav": 2294420.36
     },
     {
       "d": "2025-09-18",
-      "nav": 2256035.38
+      "nav": 2271077.04
     },
     {
       "d": "2025-09-19",
-      "nav": 2218546.86
+      "nav": 2239511.51
     },
     {
       "d": "2025-09-22",
-      "nav": 2197578.43
+      "nav": 2218801.74
     },
     {
       "d": "2025-09-23",
-      "nav": 2161543.69
+      "nav": 2182979.47
     },
     {
       "d": "2025-09-24",
-      "nav": 2187816.73
+      "nav": 2208631.71
     },
     {
       "d": "2025-09-25",
-      "nav": 2165317.37
+      "nav": 2185236.01
     },
     {
       "d": "2025-09-26",
-      "nav": 2170957.83
+      "nav": 2192576.44
     },
     {
       "d": "2025-09-29",
-      "nav": 2191561.22
+      "nav": 2213241.22
     },
     {
       "d": "2025-09-30",
-      "nav": 2189902.89
+      "nav": 2211566.49
     },
     {
       "d": "2025-10-09",
-      "nav": 2206583.74
+      "nav": 2228412.35
     },
     {
       "d": "2025-10-10",
-      "nav": 2223803.18
+      "nav": 2245802.14
     },
     {
       "d": "2025-10-13",
-      "nav": 2252050.96
+      "nav": 2274329.36
     },
     {
       "d": "2025-10-14",
-      "nav": 2237274.41
+      "nav": 2259406.63
     },
     {
       "d": "2025-10-15",
-      "nav": 2264433.11
+      "nav": 2286834.0
     },
     {
       "d": "2025-10-16",
-      "nav": 2242678.33
+      "nav": 2264864.01
     },
     {
       "d": "2025-10-17",
-      "nav": 2207618.85
+      "nav": 2229457.7
     },
     {
       "d": "2025-10-20",
-      "nav": 2234053.72
+      "nav": 2256154.08
     },
     {
       "d": "2025-10-21",
-      "nav": 2303282.33
+      "nav": 2326067.53
     },
     {
       "d": "2025-10-22",
-      "nav": 2318378.18
+      "nav": 2341312.72
     },
     {
       "d": "2025-10-23",
-      "nav": 2318506.21
+      "nav": 2341442.02
     },
     {
       "d": "2025-10-24",
-      "nav": 2335012.65
+      "nav": 2358111.74
     },
     {
       "d": "2025-10-27",
-      "nav": 2345784.84
+      "nav": 2368990.5
     },
     {
       "d": "2025-10-28",
-      "nav": 2382353.06
+      "nav": 2405920.47
     },
     {
       "d": "2025-10-29",
-      "nav": 2405493.63
+      "nav": 2429289.95
     },
     {
       "d": "2025-10-30",
-      "nav": 2359390.47
+      "nav": 2382730.72
     },
     {
       "d": "2025-10-31",
-      "nav": 2416837.77
+      "nav": 2440746.32
     },
     {
       "d": "2025-11-03",
-      "nav": 2433619.15
+      "nav": 2457693.7
     },
     {
       "d": "2025-11-04",
-      "nav": 2395326.2
+      "nav": 2419021.94
     },
     {
       "d": "2025-11-05",
-      "nav": 2417933.79
+      "nav": 2441853.17
     },
     {
       "d": "2025-11-06",
-      "nav": 2430069.48
+      "nav": 2454108.92
     },
     {
       "d": "2025-11-07",
-      "nav": 2430405.7
+      "nav": 2454448.47
     },
     {
       "d": "2025-11-10",
-      "nav": 2453594.27
+      "nav": 2477971.81
     },
     {
       "d": "2025-11-11",
-      "nav": 2451057.37
+      "nav": 2476462.89
     },
     {
       "d": "2025-11-12",
-      "nav": 2438216.66
+      "nav": 2463492.66
     },
     {
       "d": "2025-11-13",
-      "nav": 2472828.39
+      "nav": 2499340.92
     },
     {
       "d": "2025-11-14",
-      "nav": 2459845.81
+      "nav": 2487843.85
     },
     {
       "d": "2025-11-17",
-      "nav": 2465743.09
+      "nav": 2495082.75
     },
     {
       "d": "2025-11-18",
-      "nav": 2502241.54
+      "nav": 2534016.01
     },
     {
       "d": "2025-11-19",
-      "nav": 2477886.23
+      "nav": 2507744.75
     },
     {
       "d": "2025-11-20",
-      "nav": 2440537.06
+      "nav": 2469847.54
     },
     {
       "d": "2025-11-21",
-      "nav": 2375989.69
+      "nav": 2407347.97
     },
     {
       "d": "2025-11-24",
-      "nav": 2427567.46
+      "nav": 2457915.86
     },
     {
       "d": "2025-11-25",
-      "nav": 2455131.8
+      "nav": 2485824.8
     },
     {
       "d": "2025-11-26",
-      "nav": 2437414.01
+      "nav": 2467885.51
     },
     {
       "d": "2025-11-27",
-      "nav": 2466665.76
+      "nav": 2497502.95
     },
     {
       "d": "2025-11-28",
-      "nav": 2510022.22
+      "nav": 2541401.43
     },
     {
       "d": "2025-12-01",
-      "nav": 2550850.04
+      "nav": 2582739.67
     },
     {
       "d": "2025-12-02",
-      "nav": 2533808.32
+      "nav": 2565484.9
     },
     {
       "d": "2025-12-03",
-      "nav": 2496875.48
+      "nav": 2528090.34
     },
     {
       "d": "2025-12-04",
-      "nav": 2490568.24
+      "nav": 2521704.25
     },
     {
       "d": "2025-12-05",
-      "nav": 2527315.44
+      "nav": 2558910.85
     },
     {
       "d": "2025-12-08",
-      "nav": 2561398.48
+      "nav": 2593419.98
     },
     {
       "d": "2025-12-09",
-      "nav": 2538227.72
+      "nav": 2569959.55
     },
     {
       "d": "2025-12-10",
-      "nav": 2540222.42
+      "nav": 2571979.19
     },
     {
       "d": "2025-12-11",
-      "nav": 2511079.15
+      "nav": 2542471.59
     },
     {
       "d": "2025-12-12",
-      "nav": 2522582.79
+      "nav": 2554119.03
     },
     {
       "d": "2025-12-15",
-      "nav": 2498286.25
+      "nav": 2529518.75
     },
     {
       "d": "2025-12-16",
-      "nav": 2487719.74
+      "nav": 2518820.15
     },
     {
       "d": "2025-12-17",
-      "nav": 2508492.49
+      "nav": 2539852.58
     },
     {
       "d": "2025-12-18",
-      "nav": 2521095.1
+      "nav": 2552612.74
     },
     {
       "d": "2025-12-19",
-      "nav": 2562482.59
+      "nav": 2594517.65
     },
     {
       "d": "2025-12-22",
-      "nav": 2588149.01
+      "nav": 2620517.25
     },
     {
       "d": "2025-12-23",
-      "nav": 2559499.99
+      "nav": 2590352.01
     },
     {
       "d": "2025-12-24",
-      "nav": 2591658.44
+      "nav": 2624455.86
     },
     {
       "d": "2025-12-25",
-      "nav": 2628400.5
+      "nav": 2663311.65
     },
     {
       "d": "2025-12-26",
-      "nav": 2612877.79
+      "nav": 2647928.94
     },
     {
       "d": "2025-12-29",
-      "nav": 2616991.52
+      "nav": 2652184.56
     },
     {
       "d": "2025-12-30",
-      "nav": 2623082.96
+      "nav": 2658357.92
     },
     {
       "d": "2025-12-31",
-      "nav": 2621357.91
+      "nav": 2656609.67
     },
     {
       "d": "2026-01-05",
-      "nav": 2673535.06
+      "nav": 2709488.49
     },
     {
       "d": "2026-01-06",
-      "nav": 2718081.4
+      "nav": 2754633.89
     },
     {
       "d": "2026-01-07",
-      "nav": 2705513.02
+      "nav": 2741896.49
     },
     {
       "d": "2026-01-08",
-      "nav": 2747987.69
+      "nav": 2784942.36
     },
     {
       "d": "2026-01-09",
-      "nav": 2789977.95
+      "nav": 2827497.29
     },
     {
       "d": "2026-01-12",
-      "nav": 2850717.42
+      "nav": 2889053.59
     },
     {
       "d": "2026-01-13",
-      "nav": 2827009.57
+      "nav": 2865026.91
     },
     {
       "d": "2026-01-14",
-      "nav": 2846824.79
+      "nav": 2885108.61
     },
     {
       "d": "2026-01-15",
-      "nav": 2855971.17
+      "nav": 2894377.99
     },
     {
       "d": "2026-01-16",
-      "nav": 2865152.52
+      "nav": 2903682.81
     },
     {
       "d": "2026-01-19",
-      "nav": 2917379.78
+      "nav": 2956612.41
     },
     {
       "d": "2026-01-20",
-      "nav": 2883006.7
+      "nav": 2921777.09
     },
     {
       "d": "2026-01-21",
-      "nav": 2897197.05
+      "nav": 2936158.27
     },
     {
       "d": "2026-01-22",
-      "nav": 2936474.02
+      "nav": 2975963.43
     },
     {
       "d": "2026-01-23",
-      "nav": 2967208.6
+      "nav": 3007111.33
     },
     {
       "d": "2026-01-26",
-      "nav": 2953932.01
+      "nav": 2991431.09
     },
     {
       "d": "2026-01-27",
-      "nav": 2929335.25
+      "nav": 2967608.88
     },
     {
       "d": "2026-01-28",
-      "nav": 2938930.45
+      "nav": 2978967.48
     },
     {
       "d": "2026-01-29",
-      "nav": 2956183.92
+      "nav": 2998451.25
     },
     {
       "d": "2026-01-30",
-      "nav": 3034403.14
+      "nav": 3075813.93
     },
     {
       "d": "2026-02-02",
-      "nav": 2967274.5
+      "nav": 3006227.24
     },
     {
       "d": "2026-02-03",
-      "nav": 3017172.99
+      "nav": 3058013.75
     },
     {
       "d": "2026-02-04",
-      "nav": 3049670.12
+      "nav": 3091322.87
     },
     {
       "d": "2026-02-05",
-      "nav": 3024214.15
+      "nav": 3063413.33
     },
     {
       "d": "2026-02-06",
-      "nav": 3040846.44
+      "nav": 3080813.0
     },
     {
       "d": "2026-02-09",
-      "nav": 3100654.44
+      "nav": 3141831.45
     },
     {
       "d": "2026-02-10",
-      "nav": 3129959.3
+      "nav": 3171525.49
     },
     {
       "d": "2026-02-11",
-      "nav": 3105749.17
+      "nav": 3146993.84
     },
     {
       "d": "2026-02-12",
-      "nav": 3063335.66
+      "nav": 3104017.08
     },
     {
       "d": "2026-02-13",
-      "nav": 3058034.03
+      "nav": 3098645.04
     },
     {
       "d": "2026-02-24",
-      "nav": 3096775.23
+      "nav": 3137900.73
     },
     {
       "d": "2026-02-25",
-      "nav": 3143116.12
+      "nav": 3184857.04
     },
     {
       "d": "2026-02-26",
-      "nav": 3137677.1
+      "nav": 3179345.78
     },
     {
       "d": "2026-02-27",
-      "nav": 3170942.84
+      "nav": 3213053.29
     },
     {
       "d": "2026-03-02",
-      "nav": 3082674.53
+      "nav": 3123216.51
     },
     {
       "d": "2026-03-03",
-      "nav": 2989867.28
+      "nav": 3030559.99
     },
     {
       "d": "2026-03-04",
-      "nav": 2963143.6
+      "nav": 2998333.63
     },
     {
       "d": "2026-03-05",
-      "nav": 3001243.01
+      "nav": 3036759.59
     },
     {
       "d": "2026-03-06",
-      "nav": 3079224.92
+      "nav": 3114764.16
     },
     {
       "d": "2026-03-09",
-      "nav": 3059387.46
+      "nav": 3095214.06
     },
     {
       "d": "2026-03-10",
-      "nav": 3105111.36
+      "nav": 3141473.4
     },
     {
       "d": "2026-03-11",
-      "nav": 3101541.17
+      "nav": 3137861.41
     },
     {
       "d": "2026-03-12",
-      "nav": 3078374.03
+      "nav": 3114422.97
     },
     {
       "d": "2026-03-13",
-      "nav": 3055500.57
+      "nav": 3091281.65
     },
     {
       "d": "2026-03-16",
-      "nav": 3071090.25
+      "nav": 3107053.9
     },
     {
       "d": "2026-03-17",
-      "nav": 3040529.4
+      "nav": 3076135.17
     },
     {
       "d": "2026-03-18",
-      "nav": 3065734.87
+      "nav": 3101635.8
     },
     {
       "d": "2026-03-19",
-      "nav": 3011071.81
+      "nav": 3046332.61
     },
     {
       "d": "2026-03-20",
-      "nav": 2940757.9
+      "nav": 2975195.3
     },
     {
       "d": "2026-03-23",
-      "nav": 2801664.5
+      "nav": 2839341.39
     },
     {
       "d": "2026-03-24",
-      "nav": 2897654.8
+      "nav": 2939340.8
     },
     {
       "d": "2026-03-25",
-      "nav": 2947006.09
+      "nav": 2991450.86
     },
     {
       "d": "2026-03-26",
-      "nav": 2895527.13
+      "nav": 2941574.96
     },
     {
       "d": "2026-03-27",
-      "nav": 2958408.84
+      "nav": 3005832.3
     },
     {
       "d": "2026-03-30",
-      "nav": 2971452.85
+      "nav": 3019140.81
     },
     {
       "d": "2026-03-31",
-      "nav": 2939392.97
+      "nav": 2986566.42
     },
     {
       "d": "2026-04-01",
-      "nav": 3000911.92
+      "nav": 3049072.66
     },
     {
       "d": "2026-04-02",
-      "nav": 2956128.21
+      "nav": 3003570.23
     },
     {
       "d": "2026-04-03",
-      "nav": 2880760.66
+      "nav": 2926993.13
     },
     {
       "d": "2026-04-07",
-      "nav": 2910851.86
+      "nav": 2956709.68
     },
     {
       "d": "2026-04-08",
-      "nav": 3020728.21
+      "nav": 3069287.56
     },
     {
       "d": "2026-04-09",
-      "nav": 2961500.91
+      "nav": 3009832.49
     },
     {
       "d": "2026-04-10",
-      "nav": 3024343.04
+      "nav": 3074065.9
     },
     {
       "d": "2026-04-13",
-      "nav": 3026192.91
+      "nav": 3076325.77
     },
     {
       "d": "2026-04-14",
-      "nav": 3073771.55
+      "nav": 3124692.62
     },
     {
       "d": "2026-04-15",
-      "nav": 3061517.67
+      "nav": 3112235.73
     },
     {
       "d": "2026-04-16",
-      "nav": 3104243.37
+      "nav": 3155669.25
     },
     {
       "d": "2026-04-17",
-      "nav": 3099423.8
+      "nav": 3150769.84
     },
     {
       "d": "2026-04-20",
-      "nav": 3111611.54
+      "nav": 3163191.09
     },
     {
       "d": "2026-04-21",
-      "nav": 3122166.64
+      "nav": 3173939.6
     },
     {
       "d": "2026-04-22",
-      "nav": 3104428.53
+      "nav": 3154010.91
     },
     {
       "d": "2026-04-23",
-      "nav": 3072219.07
+      "nav": 3123334.61
     },
     {
       "d": "2026-04-24",
-      "nav": 3082706.88
+      "nav": 3133240.41
     },
     {
       "d": "2026-04-27",
-      "nav": 3116174.04
+      "nav": 3170049.95
     },
     {
       "d": "2026-04-28",
-      "nav": 3058904.95
+      "nav": 3111419.71
     },
     {
       "d": "2026-04-29",
-      "nav": 3087044.58
+      "nav": 3139475.3
     },
     {
       "d": "2026-04-30",
-      "nav": 3086317.34
+      "nav": 3137387.67
     },
     {
       "d": "2026-05-06",
-      "nav": 3108496.27
+      "nav": 3160184.55
     },
     {
       "d": "2026-05-07",
-      "nav": 3179128.72
+      "nav": 3231991.49
     },
     {
       "d": "2026-05-08",
-      "nav": 3266515.77
+      "nav": 3320831.61
     },
     {
       "d": "2026-05-11",
-      "nav": 3266134.37
+      "nav": 3324442.53
     },
     {
       "d": "2026-05-12",
-      "nav": 3213984.64
+      "nav": 3273255.39
     },
     {
       "d": "2026-05-13",
-      "nav": 3264676.32
+      "nav": 3323352.51
     },
     {
       "d": "2026-05-14",
-      "nav": 3172920.76
+      "nav": 3230218.69
     },
     {
       "d": "2026-05-15",
-      "nav": 3203179.59
+      "nav": 3257770.7
     },
     {
       "d": "2026-05-18",
-      "nav": 3210273.77
+      "nav": 3262756.66
     },
     {
       "d": "2026-05-19",
-      "nav": 3273291.37
+      "nav": 3326316.88
     },
     {
       "d": "2026-05-20",
-      "nav": 3232588.74
+      "nav": 3284977.71
     },
     {
       "d": "2026-05-21",
-      "nav": 3158464.54
+      "nav": 3210840.82
     },
     {
       "d": "2026-05-22",
-      "nav": 3189208.21
+      "nav": 3241188.57
     },
     {
       "d": "2026-05-25",
-      "nav": 3204686.54
+      "nav": 3256249.4
     },
     {
       "d": "2026-05-26",
-      "nav": 3151890.07
+      "nav": 3202603.44
     },
     {
       "d": "2026-05-27",
-      "nav": 3085509.78
+      "nav": 3135155.11
     },
     {
       "d": "2026-05-28",
-      "nav": 3100952.75
+      "nav": 3150846.55
     },
     {
       "d": "2026-05-29",
-      "nav": 3039195.21
+      "nav": 3088095.34
     },
     {
       "d": "2026-06-01",
-      "nav": 3096141.03
+      "nav": 3145957.41
     },
     {
       "d": "2026-06-02",
-      "nav": 3078234.88
+      "nav": 3127763.16
     },
     {
       "d": "2026-06-03",
-      "nav": 3092639.46
+      "nav": 3142399.5
     },
     {
       "d": "2026-06-04",
-      "nav": 3041841.0
+      "nav": 3090783.7
     },
     {
       "d": "2026-06-05",
-      "nav": 3043844.98
+      "nav": 3092819.93
     },
     {
       "d": "2026-06-08",
-      "nav": 2928321.02
+      "nav": 2976402.79
     },
     {
       "d": "2026-06-09",
-      "nav": 2978471.83
+      "nav": 3030017.44
     },
     {
       "d": "2026-06-10",
-      "nav": 2946220.36
+      "nav": 2996985.95
     },
     {
       "d": "2026-06-11",
-      "nav": 2896601.79
+      "nav": 2945159.78
     },
     {
       "d": "2026-06-12",
-      "nav": 2942601.77
+      "nav": 2992683.98
     },
     {
       "d": "2026-06-15",
-      "nav": 2995886.84
+      "nav": 3046013.08
     },
     {
       "d": "2026-06-16",
-      "nav": 2987944.33
+      "nav": 3039630.28
     },
     {
       "d": "2026-06-17",
-      "nav": 2930912.77
+      "nav": 2982370.45
     },
     {
       "d": "2026-06-18",
-      "nav": 2864804.03
+      "nav": 2912325.05
     },
     {
       "d": "2026-06-22",
-      "nav": 2892460.07
+      "nav": 2940899.81
     },
     {
       "d": "2026-06-23",
-      "nav": 2863335.5
+      "nav": 2909387.15
     },
     {
       "d": "2026-06-24",
-      "nav": 2826587.91
+      "nav": 2862652.51
     },
     {
       "d": "2026-06-25",
-      "nav": 2770046.45
+      "nav": 2800999.78
     },
     {
       "d": "2026-06-26",
-      "nav": 2715956.7
+      "nav": 2737550.93
     },
     {
       "d": "2026-06-29",
-      "nav": 2737885.36
+      "nav": 2757637.95
     },
     {
       "d": "2026-06-30",
-      "nav": 2768280.43
+      "nav": 2788252.31
     },
     {
       "d": "2026-07-01",
-      "nav": 2866072.86
+      "nav": 2886750.27
     },
     {
       "d": "2026-07-02",
-      "nav": 2891830.82
+      "nav": 2912694.07
     },
     {
       "d": "2026-07-03",
-      "nav": 2929355.65
+      "nav": 2950489.62
     },
     {
       "d": "2026-07-06",
-      "nav": 2884245.2
+      "nav": 2905053.72
     },
     {
       "d": "2026-07-07",
-      "nav": 2804699.26
+      "nav": 2824933.89
     },
     {
       "d": "2026-07-08",
-      "nav": 2779901.98
+      "nav": 2799957.71
     },
     {
       "d": "2026-07-09",
-      "nav": 2772882.98
+      "nav": 2792888.08
     },
     {
       "d": "2026-07-10",
-      "nav": 2844870.71
+      "nav": 2865395.16
     },
     {
       "d": "2026-07-13",
-      "nav": 2721612.72
+      "nav": 2738193.57
     },
     {
       "d": "2026-07-14",
-      "nav": 2750364.19
+      "nav": 2765804.27
     },
     {
       "d": "2026-07-15",
-      "nav": 2771943.72
+      "nav": 2781177.57
     },
     {
       "d": "2026-07-16",
-      "nav": 2802698.91
+      "nav": 2807348.95
     },
     {
       "d": "2026-07-17",
-      "nav": 2666129.14
+      "nav": 2674507.95
     },
     {
       "d": "2026-07-20",
-      "nav": 2630887.21
+      "nav": 2640374.71
     },
     {
       "d": "2026-07-21",
-      "nav": 2674031.91
+      "nav": 2683675.0
     },
     {
       "d": "2026-07-22",
-      "nav": 2708399.42
+      "nav": 2718166.45
     },
     {
       "d": "2026-07-23",
-      "nav": 2773714.9
+      "nav": 2783717.47
     },
     {
       "d": "2026-07-24",
-      "nav": 2694363.37
+      "nav": 2704079.78
     },
     {
       "d": "2026-07-27",
-      "nav": 2809968.09
+      "nav": 2820101.4
     },
     {
       "d": "2026-07-28",
-      "nav": 2801933.32
+      "nav": 2812037.65
     },
     {
       "d": "2026-07-29",
-      "nav": 2833374.1
+      "nav": 2843591.82
     },
     {
       "d": "2026-07-30",
-      "nav": 2751217.74
+      "nav": 2761139.19
     },
     {
       "d": "2026-07-31",
-      "nav": 2872738.28
+      "nav": 2883097.95
     },
     {
       "d": "2026-08-03",
-      "nav": 2942096.16
+      "nav": 2952705.95
     },
     {
       "d": "2026-08-04",
-      "nav": 3083639.93
+      "nav": 3094760.16
     },
     {
       "d": "2026-08-05",
-      "nav": 3196613.2
+      "nav": 3208140.82
     },
     {
       "d": "2026-08-06",
-      "nav": 3258694.03
+      "nav": 3270445.53
     },
     {
       "d": "2026-08-07",
-      "nav": 3313850.31
+      "nav": 3325800.72
     },
     {
       "d": "2026-08-10",
-      "nav": 3384227.26
+      "nav": 3396431.46
     },
     {
       "d": "2026-08-11",
-      "nav": 3390024.1
+      "nav": 3402249.21
     },
     {
       "d": "2026-08-12",
-      "nav": 3471432.23
+      "nav": 3483950.92
     },
     {
       "d": "2026-08-13",
-      "nav": 3453742.41
+      "nav": 3466197.3
     },
     {
       "d": "2026-08-14",
-      "nav": 3406983.34
+      "nav": 3419269.61
     },
     {
       "d": "2026-08-17",
-      "nav": 3464535.52
+      "nav": 3477029.33
     },
     {
       "d": "2026-08-18",
-      "nav": 3468125.67
+      "nav": 3480632.43
     },
     {
       "d": "2026-08-19",
-      "nav": 3336363.84
+      "nav": 3348395.44
     },
     {
       "d": "2026-08-20",
-      "nav": 3375134.59
+      "nav": 3387306.0
     },
     {
       "d": "2026-08-21",
-      "nav": 3392821.25
+      "nav": 3405056.44
     },
     {
       "d": "2026-08-24",
-      "nav": 3366218.47
+      "nav": 3378923.24
     },
     {
       "d": "2026-08-25",
-      "nav": 3407196.69
+      "nav": 3419082.51
     },
     {
       "d": "2026-08-26",
-      "nav": 3416647.75
+      "nav": 3428456.65
     },
     {
       "d": "2026-08-27",
-      "nav": 3490919.28
+      "nav": 3503663.11
     },
     {
       "d": "2026-08-28",
-      "nav": 3510675.38
+      "nav": 3526492.92
     },
     {
       "d": "2026-08-31",
-      "nav": 3598590.91
+      "nav": 3615431.16
     },
     {
       "d": "2026-09-01",
-      "nav": 3545575.85
+      "nav": 3559310.32
     },
     {
       "d": "2026-09-02",
-      "nav": 3545861.58
+      "nav": 3561684.62
     },
     {
       "d": "2026-09-03",
-      "nav": 3565075.87
+      "nav": 3576378.19
     },
     {
       "d": "2026-09-04",
-      "nav": 3500281.32
+      "nav": 3512556.81
     },
     {
       "d": "2026-09-07",
-      "nav": 3538929.76
+      "nav": 3552439.44
     },
     {
       "d": "2026-09-08",
-      "nav": 3567518.35
+      "nav": 3581137.16
     },
     {
       "d": "2026-09-09",
-      "nav": 3593408.2
+      "nav": 3607125.85
     },
     {
       "d": "2026-09-10",
-      "nav": 3523162.21
+      "nav": 3536611.69
     },
     {
       "d": "2026-09-11",
-      "nav": 3461180.98
+      "nav": 3474393.86
     },
     {
       "d": "2026-09-14",
-      "nav": 3474655.81
+      "nav": 3487920.12
     },
     {
       "d": "2026-09-15",
-      "nav": 3432421.07
+      "nav": 3445524.15
     },
     {
       "d": "2026-09-16",
-      "nav": 3489354.57
+      "nav": 3502674.99
     },
     {
       "d": "2026-09-17",
-      "nav": 3503121.69
+      "nav": 3516494.67
     },
     {
       "d": "2026-09-18",
-      "nav": 3562206.41
+      "nav": 3575804.94
     },
     {
       "d": "2026-09-21",
-      "nav": 3616290.55
+      "nav": 3630095.54
     },
     {
       "d": "2026-09-22",
-      "nav": 3652580.46
+      "nav": 3666523.99
     },
     {
       "d": "2026-09-23",
-      "nav": 3609067.64
+      "nav": 3622845.06
     },
     {
       "d": "2026-09-24",
-      "nav": 3576090.77
+      "nav": 3589742.31
     },
     {
       "d": "2026-09-28",
-      "nav": 3508320.57
+      "nav": 3521302.53
     },
     {
       "d": "2026-09-29",
-      "nav": 3557128.31
+      "nav": 3570349.08
     },
     {
       "d": "2026-09-30",
-      "nav": 3566411.48
+      "nav": 3579038.36
     },
     {
       "d": "2026-10-08",
-      "nav": 3545498.94
+      "nav": 3557822.58
     },
     {
       "d": "2026-10-09",
-      "nav": 3602322.07
+      "nav": 3610053.43
     },
     {
       "d": "2026-10-12",
-      "nav": 3515544.05
+      "nav": 3524252.45
     },
     {
       "d": "2026-10-13",
-      "nav": 3544949.79
+      "nav": 3549233.58
     },
     {
       "d": "2026-10-14",
-      "nav": 3446170.51
+      "nav": 3447886.02
     },
     {
       "d": "2026-10-15",
-      "nav": 3330406.17
+      "nav": 3332271.77
     },
     {
       "d": "2026-10-16",
-      "nav": 3347490.39
+      "nav": 3349227.48
     },
     {
       "d": "2026-10-19",
-      "nav": 3388674.35
+      "nav": 3402984.13
     },
     {
       "d": "2026-10-20",
-      "nav": 3456947.95
+      "nav": 3471616.14
     },
     {
       "d": "2026-10-21",
-      "nav": 3460907.02
+      "nav": 3477085.23
     },
     {
       "d": "2026-10-22",
-      "nav": 3407590.16
+      "nav": 3428321.58
     },
     {
       "d": "2026-10-23",
-      "nav": 3557109.29
+      "nav": 3582799.63
     },
     {
       "d": "2026-10-26",
-      "nav": 3564536.58
+      "nav": 3589520.02
     },
     {
       "d": "2026-10-27",
-      "nav": 3487744.61
+      "nav": 3512189.82
     },
     {
       "d": "2026-10-28",
-      "nav": 3534131.5
+      "nav": 3558901.83
     },
     {
       "d": "2026-10-29",
-      "nav": 3420855.37
+      "nav": 3444831.76
     },
     {
       "d": "2026-10-30",
-      "nav": 3301812.38
+      "nav": 3324954.41
     },
     {
       "d": "2026-11-02",
-      "nav": 3375704.8
+      "nav": 3401892.82
     },
     {
       "d": "2026-11-03",
-      "nav": 3317985.14
+      "nav": 3341893.64
     },
     {
       "d": "2026-11-04",
-      "nav": 3458073.11
+      "nav": 3481323.25
     },
     {
       "d": "2026-11-05",
-      "nav": 3529135.96
+      "nav": 3550482.15
     },
     {
       "d": "2026-11-06",
-      "nav": 3440105.95
+      "nav": 3463454.02
     },
     {
       "d": "2026-11-09",
-      "nav": 3444668.51
+      "nav": 3468217.43
     },
     {
       "d": "2026-11-10",
-      "nav": 3519486.6
+      "nav": 3543547.0
     },
     {
       "d": "2026-11-11",
-      "nav": 3627992.37
+      "nav": 3652794.55
+    },
+    {
+      "d": "2026-11-12",
+      "nav": 3606410.29
     }
   ],
   "benchmark": [
     {
-      "d": "2024-10-22",
-      "nav": 1276776.95
-    },
-    {
       "d": "2024-10-23",
-      "nav": 1285976.28
+      "nav": 1281642.86
     },
     {
       "d": "2024-10-24",
-      "nav": 1289525.45
+      "nav": 1285180.07
     },
     {
       "d": "2024-10-25",
-      "nav": 1315870.44
+      "nav": 1311436.29
     },
     {
       "d": "2024-10-28",
-      "nav": 1351718.3
+      "nav": 1347163.34
     },
     {
       "d": "2024-10-29",
-      "nav": 1335883.71
+      "nav": 1331382.12
     },
     {
       "d": "2024-10-30",
-      "nav": 1338524.14
+      "nav": 1334013.65
     },
     {
       "d": "2024-10-31",
-      "nav": 1352867.09
+      "nav": 1348308.27
     },
     {
       "d": "2024-11-01",
-      "nav": 1307268.18
+      "nav": 1302863.01
     },
     {
       "d": "2024-11-04",
-      "nav": 1340293.57
+      "nav": 1335777.11
     },
     {
       "d": "2024-11-05",
-      "nav": 1388466.65
+      "nav": 1383787.86
     },
     {
       "d": "2024-11-06",
-      "nav": 1404982.4
+      "nav": 1400247.96
     },
     {
       "d": "2024-11-07",
-      "nav": 1441058.04
+      "nav": 1436202.03
     },
     {
       "d": "2024-11-08",
-      "nav": 1440667.94
+      "nav": 1435813.25
     },
     {
       "d": "2024-11-11",
-      "nav": 1470424.57
+      "nav": 1465469.61
     },
     {
       "d": "2024-11-12",
-      "nav": 1455950.0
+      "nav": 1451043.81
     },
     {
       "d": "2024-11-13",
-      "nav": 1460422.32
+      "nav": 1455501.06
     },
     {
       "d": "2024-11-14",
-      "nav": 1419616.95
+      "nav": 1414833.2
     },
     {
       "d": "2024-11-15",
-      "nav": 1396731.09
+      "nav": 1392024.45
     },
     {
       "d": "2024-11-18",
-      "nav": 1366653.25
+      "nav": 1362047.97
     },
     {
       "d": "2024-11-19",
-      "nav": 1394429.05
+      "nav": 1389730.17
     },
     {
       "d": "2024-11-20",
-      "nav": 1428556.97
+      "nav": 1423743.09
     },
     {
       "d": "2024-11-21",
-      "nav": 1438528.43
+      "nav": 1433680.95
     },
     {
       "d": "2024-11-22",
-      "nav": 1387717.06
+      "nav": 1383040.8
     },
     {
       "d": "2024-11-25",
-      "nav": 1405871.55
+      "nav": 1401134.11
     },
     {
       "d": "2024-11-26",
-      "nav": 1389157.54
+      "nav": 1384476.42
     },
     {
       "d": "2024-11-27",
-      "nav": 1413435.39
+      "nav": 1408672.46
     },
     {
       "d": "2024-11-28",
-      "nav": 1417855.09
+      "nav": 1413077.27
     },
     {
       "d": "2024-11-29",
-      "nav": 1440876.18
+      "nav": 1436020.78
     },
     {
       "d": "2024-12-02",
-      "nav": 1474274.48
+      "nav": 1469306.54
     },
     {
       "d": "2024-12-03",
-      "nav": 1477550.54
+      "nav": 1472571.56
     },
     {
       "d": "2024-12-04",
-      "nav": 1455157.29
+      "nav": 1450253.77
     },
     {
       "d": "2024-12-05",
-      "nav": 1474108.42
+      "nav": 1469141.04
     },
     {
       "d": "2024-12-06",
-      "nav": 1485230.22
+      "nav": 1480225.36
     },
     {
       "d": "2024-12-09",
-      "nav": 1474562.54
+      "nav": 1469593.64
     },
     {
       "d": "2024-12-10",
-      "nav": 1485881.6
+      "nav": 1480874.55
     },
     {
       "d": "2024-12-11",
-      "nav": 1501868.31
+      "nav": 1496807.39
     },
     {
       "d": "2024-12-12",
-      "nav": 1516532.57
+      "nav": 1511422.23
     },
     {
       "d": "2024-12-13",
-      "nav": 1492542.32
+      "nav": 1487512.83
     },
     {
       "d": "2024-12-16",
-      "nav": 1481665.49
+      "nav": 1476672.65
     },
     {
       "d": "2024-12-17",
-      "nav": 1428976.37
+      "nav": 1424161.08
     },
     {
       "d": "2024-12-18",
-      "nav": 1433937.12
+      "nav": 1429105.11
     },
     {
       "d": "2024-12-19",
-      "nav": 1437504.25
+      "nav": 1432660.22
     },
     {
       "d": "2024-12-20",
-      "nav": 1452027.43
+      "nav": 1447134.46
     },
     {
       "d": "2024-12-23",
-      "nav": 1393121.62
+      "nav": 1388427.15
     },
     {
       "d": "2024-12-24",
-      "nav": 1406330.51
+      "nav": 1401591.53
     },
     {
       "d": "2024-12-25",
-      "nav": 1376155.21
+      "nav": 1371517.91
     },
     {
       "d": "2024-12-26",
-      "nav": 1392244.05
+      "nav": 1387552.53
     },
     {
       "d": "2024-12-27",
-      "nav": 1400987.4
+      "nav": 1396266.42
     },
     {
       "d": "2024-12-30",
-      "nav": 1382660.21
+      "nav": 1378000.99
     },
     {
       "d": "2024-12-31",
-      "nav": 1352222.74
+      "nav": 1347666.09
     },
     {
       "d": "2025-01-02",
-      "nav": 1329020.33
+      "nav": 1324541.86
     },
     {
       "d": "2025-01-03",
-      "nav": 1285089.62
+      "nav": 1280759.19
     },
     {
       "d": "2025-01-06",
-      "nav": 1278478.79
+      "nav": 1274170.64
     },
     {
       "d": "2025-01-07",
-      "nav": 1307018.79
+      "nav": 1302614.47
     },
     {
       "d": "2025-01-08",
-      "nav": 1307598.95
+      "nav": 1303192.67
     },
     {
       "d": "2025-01-09",
-      "nav": 1313836.12
+      "nav": 1309408.82
     },
     {
       "d": "2025-01-10",
-      "nav": 1276097.3
+      "nav": 1271797.18
     },
     {
       "d": "2025-01-13",
-      "nav": 1275771.88
+      "nav": 1271472.85
     },
     {
       "d": "2025-01-14",
-      "nav": 1340373.76
+      "nav": 1335857.04
     },
     {
       "d": "2025-01-15",
-      "nav": 1335287.31
+      "nav": 1330787.73
     },
     {
       "d": "2025-01-16",
-      "nav": 1344439.97
+      "nav": 1339909.54
     },
     {
       "d": "2025-01-17",
-      "nav": 1344574.23
+      "nav": 1340043.35
     },
     {
       "d": "2025-01-20",
-      "nav": 1355951.92
+      "nav": 1351382.7
     },
     {
       "d": "2025-01-21",
-      "nav": 1354134.8
+      "nav": 1349571.71
     },
     {
       "d": "2025-01-22",
-      "nav": 1337603.23
+      "nav": 1333095.84
     },
     {
       "d": "2025-01-23",
-      "nav": 1335561.46
+      "nav": 1331060.96
     },
     {
       "d": "2025-01-24",
-      "nav": 1350876.49
+      "nav": 1346324.37
     },
     {
       "d": "2025-01-27",
-      "nav": 1335375.4
+      "nav": 1330875.52
     },
     {
       "d": "2025-02-05",
-      "nav": 1348467.15
+      "nav": 1343923.16
     },
     {
       "d": "2025-02-06",
-      "nav": 1382498.04
+      "nav": 1377839.37
     },
     {
       "d": "2025-02-07",
-      "nav": 1404984.32
+      "nav": 1400249.87
     },
     {
       "d": "2025-02-10",
-      "nav": 1433058.1
+      "nav": 1428229.05
     },
     {
       "d": "2025-02-11",
-      "nav": 1432616.58
+      "nav": 1427789.02
     },
     {
       "d": "2025-02-12",
-      "nav": 1448301.68
+      "nav": 1443421.27
     },
     {
       "d": "2025-02-13",
-      "nav": 1432086.86
+      "nav": 1427261.09
     },
     {
       "d": "2025-02-14",
-      "nav": 1436266.78
+      "nav": 1431426.92
     },
     {
       "d": "2025-02-17",
-      "nav": 1455565.07
+      "nav": 1450660.18
     },
     {
       "d": "2025-02-18",
-      "nav": 1420107.71
+      "nav": 1415322.3
     },
     {
       "d": "2025-02-19",
-      "nav": 1452727.91
+      "nav": 1447832.58
     },
     {
       "d": "2025-02-20",
-      "nav": 1467868.42
+      "nav": 1462922.08
     },
     {
       "d": "2025-02-21",
-      "nav": 1482498.76
+      "nav": 1477503.12
     },
     {
       "d": "2025-02-24",
-      "nav": 1486629.62
+      "nav": 1481620.05
     },
     {
       "d": "2025-02-25",
-      "nav": 1479802.83
+      "nav": 1474816.27
     },
     {
       "d": "2025-02-26",
-      "nav": 1501824.45
+      "nav": 1496763.67
     },
     {
       "d": "2025-02-27",
-      "nav": 1503100.76
+      "nav": 1498035.69
     },
     {
       "d": "2025-02-28",
-      "nav": 1457300.64
+      "nav": 1452389.9
     },
     {
       "d": "2025-03-03",
-      "nav": 1469092.44
+      "nav": 1464141.97
     },
     {
       "d": "2025-03-04",
-      "nav": 1491705.68
+      "nav": 1486679.01
     },
     {
       "d": "2025-03-05",
-      "nav": 1498131.39
+      "nav": 1493083.07
     },
     {
       "d": "2025-03-06",
-      "nav": 1520586.03
+      "nav": 1515462.03
     },
     {
       "d": "2025-03-07",
-      "nav": 1515349.38
+      "nav": 1510243.03
     },
     {
       "d": "2025-03-10",
-      "nav": 1526613.62
+      "nav": 1521469.32
     },
     {
       "d": "2025-03-11",
-      "nav": 1533597.55
+      "nav": 1528429.71
     },
     {
       "d": "2025-03-12",
-      "nav": 1541062.18
+      "nav": 1535869.18
     },
     {
       "d": "2025-03-13",
-      "nav": 1525736.29
+      "nav": 1520594.94
     },
     {
       "d": "2025-03-14",
-      "nav": 1554503.73
+      "nav": 1549265.44
     },
     {
       "d": "2025-03-17",
-      "nav": 1565831.98
+      "nav": 1560555.52
     },
     {
       "d": "2025-03-18",
-      "nav": 1574659.67
+      "nav": 1569353.46
     },
     {
       "d": "2025-03-19",
-      "nav": 1558319.78
+      "nav": 1553068.63
     },
     {
       "d": "2025-03-20",
-      "nav": 1551075.07
+      "nav": 1545848.33
     },
     {
       "d": "2025-03-21",
-      "nav": 1522416.52
+      "nav": 1517286.36
     },
     {
       "d": "2025-03-24",
-      "nav": 1502807.37
+      "nav": 1497743.29
     },
     {
       "d": "2025-03-25",
-      "nav": 1502493.08
+      "nav": 1497430.05
     },
     {
       "d": "2025-03-26",
-      "nav": 1514767.48
+      "nav": 1509663.09
     },
     {
       "d": "2025-03-27",
-      "nav": 1508369.61
+      "nav": 1503286.78
     },
     {
       "d": "2025-03-28",
-      "nav": 1484978.88
+      "nav": 1479974.87
     },
     {
       "d": "2025-03-31",
-      "nav": 1465815.44
+      "nav": 1460876.01
     },
     {
       "d": "2025-04-01",
-      "nav": 1483053.82
+      "nav": 1478056.3
     },
     {
       "d": "2025-04-02",
-      "nav": 1486035.91
+      "nav": 1481028.35
     },
     {
       "d": "2025-04-03",
-      "nav": 1478765.71
+      "nav": 1473782.64
     },
     {
       "d": "2025-04-07",
-      "nav": 1296024.92
+      "nav": 1291657.64
     },
     {
       "d": "2025-04-08",
-      "nav": 1310612.65
+      "nav": 1306196.22
     },
     {
       "d": "2025-04-09",
-      "nav": 1351870.23
+      "nav": 1347314.76
     },
     {
       "d": "2025-04-10",
-      "nav": 1391606.41
+      "nav": 1386917.04
     },
     {
       "d": "2025-04-11",
-      "nav": 1403009.25
+      "nav": 1398281.46
     },
     {
       "d": "2025-04-14",
-      "nav": 1429830.97
+      "nav": 1425012.8
     },
     {
       "d": "2025-04-15",
-      "nav": 1429732.33
+      "nav": 1424914.49
     },
     {
       "d": "2025-04-16",
-      "nav": 1409069.21
+      "nav": 1404321.0
     },
     {
       "d": "2025-04-17",
-      "nav": 1419256.89
+      "nav": 1414474.35
     },
     {
       "d": "2025-04-18",
-      "nav": 1418231.58
+      "nav": 1413452.49
     },
     {
       "d": "2025-04-21",
-      "nav": 1442997.81
+      "nav": 1438135.27
     },
     {
       "d": "2025-04-22",
-      "nav": 1443670.45
+      "nav": 1438805.64
     },
     {
       "d": "2025-04-23",
-      "nav": 1452638.91
+      "nav": 1447743.88
     },
     {
       "d": "2025-04-24",
-      "nav": 1437740.59
+      "nav": 1432895.76
     },
     {
       "d": "2025-04-25",
-      "nav": 1439516.8
+      "nav": 1434665.99
     },
     {
       "d": "2025-04-28",
-      "nav": 1417508.3
+      "nav": 1412731.65
     },
     {
       "d": "2025-04-29",
-      "nav": 1428843.71
+      "nav": 1424028.86
     },
     {
       "d": "2025-04-30",
-      "nav": 1444116.58
+      "nav": 1439250.27
     },
     {
       "d": "2025-05-06",
-      "nav": 1485812.56
+      "nav": 1480805.74
     },
     {
       "d": "2025-05-07",
-      "nav": 1497169.05
+      "nav": 1492123.97
     },
     {
       "d": "2025-05-08",
-      "nav": 1513034.02
+      "nav": 1507935.47
     },
     {
       "d": "2025-05-09",
-      "nav": 1497861.59
+      "nav": 1492814.17
     },
     {
       "d": "2025-05-12",
-      "nav": 1519560.67
+      "nav": 1514440.14
     },
     {
       "d": "2025-05-13",
-      "nav": 1515474.86
+      "nav": 1510368.09
     },
     {
       "d": "2025-05-14",
-      "nav": 1519788.72
+      "nav": 1514667.42
     },
     {
       "d": "2025-05-15",
-      "nav": 1508425.72
+      "nav": 1503342.7
     },
     {
       "d": "2025-05-16",
-      "nav": 1515217.99
+      "nav": 1510112.09
     },
     {
       "d": "2025-05-19",
-      "nav": 1528971.12
+      "nav": 1523818.88
     },
     {
       "d": "2025-05-20",
-      "nav": 1546233.71
+      "nav": 1541023.29
     },
     {
       "d": "2025-05-21",
-      "nav": 1537941.02
+      "nav": 1532758.54
     },
     {
       "d": "2025-05-22",
-      "nav": 1514524.03
+      "nav": 1509420.46
     },
     {
       "d": "2025-05-23",
-      "nav": 1497564.45
+      "nav": 1492518.03
     },
     {
       "d": "2025-05-26",
-      "nav": 1513355.75
+      "nav": 1508256.12
     },
     {
       "d": "2025-05-27",
-      "nav": 1515077.69
+      "nav": 1509972.25
     },
     {
       "d": "2025-05-28",
-      "nav": 1507616.53
+      "nav": 1502536.24
     },
     {
       "d": "2025-05-29",
-      "nav": 1532635.76
+      "nav": 1527471.16
     },
     {
       "d": "2025-05-30",
-      "nav": 1510759.47
+      "nav": 1505668.59
     },
     {
       "d": "2025-06-03",
-      "nav": 1523423.62
+      "nav": 1518290.06
     },
     {
       "d": "2025-06-04",
-      "nav": 1537565.74
+      "nav": 1532384.53
     },
     {
       "d": "2025-06-05",
-      "nav": 1541224.35
+      "nav": 1536030.81
     },
     {
       "d": "2025-06-06",
-      "nav": 1540278.98
+      "nav": 1535088.62
     },
     {
       "d": "2025-06-09",
-      "nav": 1558846.53
+      "nav": 1553593.61
     },
     {
       "d": "2025-06-10",
-      "nav": 1546841.24
+      "nav": 1541628.78
     },
     {
       "d": "2025-06-11",
-      "nav": 1555941.14
+      "nav": 1550698.01
     },
     {
       "d": "2025-06-12",
-      "nav": 1559104.79
+      "nav": 1553851.0
     },
     {
       "d": "2025-06-13",
-      "nav": 1530166.02
+      "nav": 1525009.74
     },
     {
       "d": "2025-06-16",
-      "nav": 1543531.2
+      "nav": 1538329.89
     },
     {
       "d": "2025-06-17",
-      "nav": 1540717.21
+      "nav": 1535525.38
     },
     {
       "d": "2025-06-18",
-      "nav": 1534412.3
+      "nav": 1529241.72
     },
     {
       "d": "2025-06-19",
-      "nav": 1505859.01
+      "nav": 1500784.64
     },
     {
       "d": "2025-06-20",
-      "nav": 1494082.84
+      "nav": 1489048.16
     },
     {
       "d": "2025-06-23",
-      "nav": 1518109.37
+      "nav": 1512993.73
     },
     {
       "d": "2025-06-24",
-      "nav": 1548278.34
+      "nav": 1543061.03
     },
     {
       "d": "2025-06-25",
-      "nav": 1563256.12
+      "nav": 1557988.34
     },
     {
       "d": "2025-06-26",
-      "nav": 1559664.78
+      "nav": 1554409.1
     },
     {
       "d": "2025-06-27",
-      "nav": 1566889.41
+      "nav": 1561609.38
     },
     {
       "d": "2025-06-30",
-      "nav": 1586587.6
+      "nav": 1581241.2
     },
     {
       "d": "2025-07-01",
-      "nav": 1591830.97
+      "nav": 1586466.9
     },
     {
       "d": "2025-07-02",
-      "nav": 1584474.86
+      "nav": 1579135.58
     },
     {
       "d": "2025-07-03",
-      "nav": 1592944.0
+      "nav": 1587576.18
     },
     {
       "d": "2025-07-04",
-      "nav": 1577758.25
+      "nav": 1572441.6
     },
     {
       "d": "2025-07-07",
-      "nav": 1586164.05
+      "nav": 1580819.08
     },
     {
       "d": "2025-07-08",
-      "nav": 1604757.27
+      "nav": 1599349.64
     },
     {
       "d": "2025-07-09",
-      "nav": 1600867.44
+      "nav": 1595472.92
     },
     {
       "d": "2025-07-10",
-      "nav": 1605075.98
+      "nav": 1599667.28
     },
     {
       "d": "2025-07-11",
-      "nav": 1611340.26
+      "nav": 1605910.45
     },
     {
       "d": "2025-07-14",
-      "nav": 1619617.99
+      "nav": 1614160.29
     },
     {
       "d": "2025-07-15",
-      "nav": 1606657.18
+      "nav": 1601243.15
     },
     {
       "d": "2025-07-16",
-      "nav": 1615051.29
+      "nav": 1609608.97
     },
     {
       "d": "2025-07-17",
-      "nav": 1628666.86
+      "nav": 1623178.66
     },
     {
       "d": "2025-07-18",
-      "nav": 1631748.41
+      "nav": 1626249.83
     },
     {
       "d": "2025-07-21",
-      "nav": 1654201.75
+      "nav": 1648627.51
     },
     {
       "d": "2025-07-22",
-      "nav": 1661710.24
+      "nav": 1656110.69
     },
     {
       "d": "2025-07-23",
-      "nav": 1649370.61
+      "nav": 1643812.64
     },
     {
       "d": "2025-07-24",
-      "nav": 1670311.07
+      "nav": 1664682.54
     },
     {
       "d": "2025-07-25",
-      "nav": 1672401.31
+      "nav": 1666765.73
     },
     {
       "d": "2025-07-28",
-      "nav": 1679827.44
+      "nav": 1674166.85
     },
     {
       "d": "2025-07-29",
-      "nav": 1683608.37
+      "nav": 1677935.03
     },
     {
       "d": "2025-07-30",
-      "nav": 1675171.74
+      "nav": 1669526.83
     },
     {
       "d": "2025-07-31",
-      "nav": 1657085.55
+      "nav": 1651501.59
     },
     {
       "d": "2025-08-01",
-      "nav": 1664915.64
+      "nav": 1659305.29
     },
     {
       "d": "2025-08-04",
-      "nav": 1683485.49
+      "nav": 1677812.57
     },
     {
       "d": "2025-08-05",
-      "nav": 1697445.6
+      "nav": 1691725.63
     },
     {
       "d": "2025-08-06",
-      "nav": 1711745.6
+      "nav": 1705977.45
     },
     {
       "d": "2025-08-07",
-      "nav": 1712776.25
+      "nav": 1707004.63
     },
     {
       "d": "2025-08-08",
-      "nav": 1711334.62
+      "nav": 1705567.86
     },
     {
       "d": "2025-08-11",
-      "nav": 1735012.12
+      "nav": 1729165.57
     },
     {
       "d": "2025-08-12",
-      "nav": 1734319.05
+      "nav": 1728474.83
     },
     {
       "d": "2025-08-13",
-      "nav": 1745141.21
+      "nav": 1739260.52
     },
     {
       "d": "2025-08-14",
-      "nav": 1713378.93
+      "nav": 1707605.27
     },
     {
       "d": "2025-08-15",
-      "nav": 1745606.78
+      "nav": 1739724.52
     },
     {
       "d": "2025-08-18",
-      "nav": 1777789.9
+      "nav": 1771799.19
     },
     {
       "d": "2025-08-19",
-      "nav": 1787978.11
+      "nav": 1781953.08
     },
     {
       "d": "2025-08-20",
-      "nav": 1801837.4
+      "nav": 1795765.66
     },
     {
       "d": "2025-08-21",
-      "nav": 1795706.35
+      "nav": 1789655.27
     },
     {
       "d": "2025-08-22",
-      "nav": 1806606.83
+      "nav": 1800519.01
     },
     {
       "d": "2025-08-25",
-      "nav": 1824553.8
+      "nav": 1818405.51
     },
     {
       "d": "2025-08-26",
-      "nav": 1828196.53
+      "nav": 1822035.97
     },
     {
       "d": "2025-08-27",
-      "nav": 1785061.62
+      "nav": 1779046.41
     },
     {
       "d": "2025-08-28",
-      "nav": 1796637.3
+      "nav": 1790583.08
     },
     {
       "d": "2025-08-29",
-      "nav": 1793768.11
+      "nav": 1787723.56
     },
     {
       "d": "2025-09-01",
-      "nav": 1810849.38
+      "nav": 1804747.27
     },
     {
       "d": "2025-09-02",
-      "nav": 1787055.47
+      "nav": 1781033.54
     },
     {
       "d": "2025-09-03",
-      "nav": 1753370.3
+      "nav": 1747461.89
     },
     {
       "d": "2025-09-04",
-      "nav": 1742386.03
+      "nav": 1736514.63
     },
     {
       "d": "2025-09-05",
-      "nav": 1786141.77
+      "nav": 1780122.92
     },
     {
       "d": "2025-09-08",
-      "nav": 1807566.4
+      "nav": 1801475.35
     },
     {
       "d": "2025-09-09",
-      "nav": 1788295.65
+      "nav": 1782269.54
     },
     {
       "d": "2025-09-10",
-      "nav": 1789635.51
+      "nav": 1783604.89
     },
     {
       "d": "2025-09-11",
-      "nav": 1816045.35
+      "nav": 1809925.74
     },
     {
       "d": "2025-09-12",
-      "nav": 1814088.3
+      "nav": 1807975.28
     },
     {
       "d": "2025-09-15",
-      "nav": 1812662.29
+      "nav": 1806554.08
     },
     {
       "d": "2025-09-16",
-      "nav": 1830930.41
+      "nav": 1824760.63
     },
     {
       "d": "2025-09-17",
-      "nav": 1837889.6
+      "nav": 1831696.37
     },
     {
       "d": "2025-09-18",
-      "nav": 1814408.83
+      "nav": 1808294.73
     },
     {
       "d": "2025-09-19",
-      "nav": 1803923.19
+      "nav": 1797844.42
     },
     {
       "d": "2025-09-22",
-      "nav": 1803715.26
+      "nav": 1797637.19
     },
     {
       "d": "2025-09-23",
-      "nav": 1778541.35
+      "nav": 1772548.11
     },
     {
       "d": "2025-09-24",
-      "nav": 1806395.42
+      "nav": 1800308.32
     },
     {
       "d": "2025-09-25",
-      "nav": 1794981.32
+      "nav": 1788932.68
     },
     {
       "d": "2025-09-26",
-      "nav": 1779626.69
+      "nav": 1773629.79
     },
     {
       "d": "2025-09-29",
-      "nav": 1795201.8
+      "nav": 1789152.42
     },
     {
       "d": "2025-09-30",
-      "nav": 1801814.51
+      "nav": 1795742.85
     },
     {
       "d": "2025-10-09",
-      "nav": 1815103.44
+      "nav": 1808987.0
     },
     {
       "d": "2025-10-10",
-      "nav": 1809160.91
+      "nav": 1803064.49
     },
     {
       "d": "2025-10-13",
-      "nav": 1803314.99
+      "nav": 1797238.27
     },
     {
       "d": "2025-10-14",
-      "nav": 1783805.13
+      "nav": 1777794.16
     },
     {
       "d": "2025-10-15",
-      "nav": 1808793.15
+      "nav": 1802697.97
     },
     {
       "d": "2025-10-16",
-      "nav": 1790682.79
+      "nav": 1784648.64
     },
     {
       "d": "2025-10-17",
-      "nav": 1750060.58
+      "nav": 1744163.31
     },
     {
       "d": "2025-10-20",
-      "nav": 1771729.93
+      "nav": 1765759.64
     },
     {
       "d": "2025-10-21",
-      "nav": 1802060.4
+      "nav": 1795987.9
     },
     {
       "d": "2025-10-22",
-      "nav": 1799871.08
+      "nav": 1793805.96
     },
     {
       "d": "2025-10-23",
-      "nav": 1802643.41
+      "nav": 1796568.95
     },
     {
       "d": "2025-10-24",
-      "nav": 1814282.23
+      "nav": 1808168.55
     },
     {
       "d": "2025-10-27",
-      "nav": 1827925.56
+      "nav": 1821765.91
     },
     {
       "d": "2025-10-28",
-      "nav": 1828517.47
+      "nav": 1822355.82
     },
     {
       "d": "2025-10-29",
-      "nav": 1838675.21
+      "nav": 1832479.34
     },
     {
       "d": "2025-10-30",
-      "nav": 1818495.01
+      "nav": 1812367.14
     },
     {
       "d": "2025-10-31",
-      "nav": 1834235.62
+      "nav": 1828054.7
     },
     {
       "d": "2025-11-03",
-      "nav": 1847786.96
+      "nav": 1841560.38
     },
     {
       "d": "2025-11-04",
-      "nav": 1833934.6
+      "nav": 1827754.71
     },
     {
       "d": "2025-11-05",
-      "nav": 1846718.47
+      "nav": 1840495.49
     },
     {
       "d": "2025-11-06",
-      "nav": 1854325.7
+      "nav": 1848077.09
     },
     {
       "d": "2025-11-07",
-      "nav": 1851312.95
+      "nav": 1845074.49
     },
     {
       "d": "2025-11-10",
-      "nav": 1863540.57
+      "nav": 1857260.91
     },
     {
       "d": "2025-11-11",
-      "nav": 1868081.47
+      "nav": 1861786.5
     },
     {
       "d": "2025-11-12",
-      "nav": 1859550.33
+      "nav": 1853284.12
     },
     {
       "d": "2025-11-13",
-      "nav": 1880408.93
+      "nav": 1874072.42
     },
     {
       "d": "2025-11-14",
-      "nav": 1872296.32
+      "nav": 1865987.15
     },
     {
       "d": "2025-11-17",
-      "nav": 1875758.95
+      "nav": 1869438.12
     },
     {
       "d": "2025-11-18",
-      "nav": 1854411.26
+      "nav": 1848162.36
     },
     {
       "d": "2025-11-19",
-      "nav": 1832451.1
+      "nav": 1826276.2
     },
     {
       "d": "2025-11-20",
-      "nav": 1818453.23
+      "nav": 1812325.5
     },
     {
       "d": "2025-11-21",
-      "nav": 1750449.66
+      "nav": 1744551.08
     },
     {
       "d": "2025-11-24",
-      "nav": 1775796.38
+      "nav": 1769812.39
     },
     {
       "d": "2025-11-25",
-      "nav": 1799545.13
+      "nav": 1793481.11
     },
     {
       "d": "2025-11-26",
-      "nav": 1793172.39
+      "nav": 1787129.85
     },
     {
       "d": "2025-11-27",
-      "nav": 1797620.73
+      "nav": 1791563.2
     },
     {
       "d": "2025-11-28",
-      "nav": 1818199.7
+      "nav": 1812072.82
     },
     {
       "d": "2025-12-01",
-      "nav": 1831182.19
+      "nav": 1825011.57
     },
     {
       "d": "2025-12-02",
-      "nav": 1821033.76
+      "nav": 1814897.33
     },
     {
       "d": "2025-12-03",
-      "nav": 1806556.86
+      "nav": 1800469.22
     },
     {
       "d": "2025-12-04",
-      "nav": 1791976.25
+      "nav": 1785937.74
     },
     {
       "d": "2025-12-05",
-      "nav": 1817036.06
+      "nav": 1810913.11
     },
     {
       "d": "2025-12-08",
-      "nav": 1833549.9
+      "nav": 1827371.3
     },
     {
       "d": "2025-12-09",
-      "nav": 1820213.29
+      "nav": 1814079.62
     },
     {
       "d": "2025-12-10",
-      "nav": 1821119.89
+      "nav": 1814983.17
     },
     {
       "d": "2025-12-11",
-      "nav": 1796160.83
+      "nav": 1790108.22
     },
     {
       "d": "2025-12-12",
-      "nav": 1801152.12
+      "nav": 1795082.69
     },
     {
       "d": "2025-12-15",
-      "nav": 1797540.12
+      "nav": 1791482.86
     },
     {
       "d": "2025-12-16",
-      "nav": 1771037.32
+      "nav": 1765069.37
     },
     {
       "d": "2025-12-17",
-      "nav": 1783989.52
+      "nav": 1777977.92
     },
     {
       "d": "2025-12-18",
-      "nav": 1788216.13
+      "nav": 1782190.29
     },
     {
       "d": "2025-12-19",
-      "nav": 1813553.86
+      "nav": 1807442.64
     },
     {
       "d": "2025-12-22",
-      "nav": 1825020.1
+      "nav": 1818870.24
     },
     {
       "d": "2025-12-23",
-      "nav": 1814132.2
+      "nav": 1808019.03
     },
     {
       "d": "2025-12-24",
-      "nav": 1835643.39
+      "nav": 1829457.73
     },
     {
       "d": "2025-12-25",
-      "nav": 1853372.44
+      "nav": 1847127.04
     },
     {
       "d": "2025-12-26",
-      "nav": 1852888.87
+      "nav": 1846645.1
     },
     {
       "d": "2025-12-29",
-      "nav": 1848677.86
+      "nav": 1842448.28
     },
     {
       "d": "2025-12-30",
-      "nav": 1843942.74
+      "nav": 1837729.11
     },
     {
       "d": "2025-12-31",
-      "nav": 1846134.11
+      "nav": 1839913.1
     },
     {
       "d": "2026-01-05",
-      "nav": 1876676.46
+      "nav": 1870352.53
     },
     {
       "d": "2026-01-06",
-      "nav": 1901399.71
+      "nav": 1894992.47
     },
     {
       "d": "2026-01-07",
-      "nav": 1905695.59
+      "nav": 1899273.87
     },
     {
       "d": "2026-01-08",
-      "nav": 1925813.92
+      "nav": 1919324.41
     },
     {
       "d": "2026-01-09",
-      "nav": 1951644.36
+      "nav": 1945067.81
     },
     {
       "d": "2026-01-12",
-      "nav": 1994935.56
+      "nav": 1988213.13
     },
     {
       "d": "2026-01-13",
-      "nav": 1972449.07
+      "nav": 1965802.41
     },
     {
       "d": "2026-01-14",
-      "nav": 1986216.38
+      "nav": 1979523.33
     },
     {
       "d": "2026-01-15",
-      "nav": 1977015.22
+      "nav": 1970353.18
     },
     {
       "d": "2026-01-16",
-      "nav": 1975951.71
+      "nav": 1969293.25
     },
     {
       "d": "2026-01-19",
-      "nav": 1994455.33
+      "nav": 1987734.51
     },
     {
       "d": "2026-01-20",
-      "nav": 1985657.61
+      "nav": 1978966.44
     },
     {
       "d": "2026-01-21",
-      "nav": 2000207.13
+      "nav": 1993466.93
     },
     {
       "d": "2026-01-22",
-      "nav": 2017616.74
+      "nav": 2010817.87
     },
     {
       "d": "2026-01-23",
-      "nav": 2047624.27
+      "nav": 2040724.29
     },
     {
       "d": "2026-01-26",
-      "nav": 2024702.62
+      "nav": 2017879.88
     },
     {
       "d": "2026-01-27",
-      "nav": 2021293.1
+      "nav": 2014481.85
     },
     {
       "d": "2026-01-28",
-      "nav": 2010719.43
+      "nav": 2003943.81
     },
     {
       "d": "2026-01-29",
-      "nav": 1996203.68
+      "nav": 1989476.97
     },
     {
       "d": "2026-01-30",
-      "nav": 1990160.19
+      "nav": 1983453.85
     },
     {
       "d": "2026-02-02",
-      "nav": 1943097.42
+      "nav": 1936549.66
     },
     {
       "d": "2026-02-03",
-      "nav": 1986681.88
+      "nav": 1979987.26
     },
     {
       "d": "2026-02-04",
-      "nav": 1995801.16
+      "nav": 1989075.81
     },
     {
       "d": "2026-02-05",
-      "nav": 1978606.29
+      "nav": 1971938.88
     },
     {
       "d": "2026-02-06",
-      "nav": 1982991.56
+      "nav": 1976309.38
     },
     {
       "d": "2026-02-09",
-      "nav": 2017246.26
+      "nav": 2010448.65
     },
     {
       "d": "2026-02-10",
-      "nav": 2017153.68
+      "nav": 2010356.38
     },
     {
       "d": "2026-02-11",
-      "nav": 2013336.71
+      "nav": 2006552.27
     },
     {
       "d": "2026-02-12",
-      "nav": 2012378.04
+      "nav": 2005596.83
     },
     {
       "d": "2026-02-13",
-      "nav": 1999079.01
+      "nav": 1992342.61
     },
     {
       "d": "2026-02-24",
-      "nav": 2025041.3
+      "nav": 2018217.42
     },
     {
       "d": "2026-02-25",
-      "nav": 2046108.4
+      "nav": 2039213.53
     },
     {
       "d": "2026-02-26",
-      "nav": 2052420.42
+      "nav": 2045504.28
     },
     {
       "d": "2026-02-27",
-      "nav": 2066664.59
+      "nav": 2059700.45
     },
     {
       "d": "2026-03-02",
-      "nav": 2032107.01
+      "nav": 2025259.31
     },
     {
       "d": "2026-03-03",
-      "nav": 1967731.34
+      "nav": 1961100.58
     },
     {
       "d": "2026-03-04",
-      "nav": 1957426.6
+      "nav": 1950830.56
     },
     {
       "d": "2026-03-05",
-      "nav": 1980781.34
+      "nav": 1974106.61
     },
     {
       "d": "2026-03-06",
-      "nav": 2011130.47
+      "nav": 2004353.46
     },
     {
       "d": "2026-03-09",
-      "nav": 1995789.24
+      "nav": 1989063.93
     },
     {
       "d": "2026-03-10",
-      "nav": 2030944.26
+      "nav": 2024100.48
     },
     {
       "d": "2026-03-11",
-      "nav": 2030065.7
+      "nav": 2023224.88
     },
     {
       "d": "2026-03-12",
-      "nav": 2015236.11
+      "nav": 2008445.27
     },
     {
       "d": "2026-03-13",
-      "nav": 1997516.63
+      "nav": 1990785.5
     },
     {
       "d": "2026-03-16",
-      "nav": 1999913.32
+      "nav": 1993174.12
     },
     {
       "d": "2026-03-17",
-      "nav": 1963205.48
+      "nav": 1956589.97
     },
     {
       "d": "2026-03-18",
-      "nav": 1982716.54
+      "nav": 1976035.28
     },
     {
       "d": "2026-03-19",
-      "nav": 1934524.11
+      "nav": 1928005.25
     },
     {
       "d": "2026-03-20",
-      "nav": 1890746.4
+      "nav": 1884375.06
     },
     {
       "d": "2026-03-23",
-      "nav": 1793556.49
+      "nav": 1787512.65
     },
     {
       "d": "2026-03-24",
-      "nav": 1854050.8
+      "nav": 1847803.11
     },
     {
       "d": "2026-03-25",
-      "nav": 1889951.2
+      "nav": 1883582.53
     },
     {
       "d": "2026-03-26",
-      "nav": 1861924.48
+      "nav": 1855650.26
     },
     {
       "d": "2026-03-27",
-      "nav": 1887989.0
+      "nav": 1881626.95
     },
     {
       "d": "2026-03-30",
-      "nav": 1892817.72
+      "nav": 1886439.4
     },
     {
       "d": "2026-03-31",
-      "nav": 1865440.54
+      "nav": 1859154.47
     },
     {
       "d": "2026-04-01",
-      "nav": 1896436.83
+      "nav": 1890046.31
     },
     {
       "d": "2026-04-02",
-      "nav": 1868126.13
+      "nav": 1861831.01
     },
     {
       "d": "2026-04-03",
-      "nav": 1828315.53
+      "nav": 1822154.57
     },
     {
       "d": "2026-04-07",
-      "nav": 1852399.38
+      "nav": 1846157.26
     },
     {
       "d": "2026-04-08",
-      "nav": 1924541.66
+      "nav": 1918056.44
     },
     {
       "d": "2026-04-09",
-      "nav": 1902889.07
+      "nav": 1896476.81
     },
     {
       "d": "2026-04-10",
-      "nav": 1920508.35
+      "nav": 1914036.72
     },
     {
       "d": "2026-04-13",
-      "nav": 1923366.9
+      "nav": 1916885.64
     },
     {
       "d": "2026-04-14",
-      "nav": 1942099.65
+      "nav": 1935555.27
     },
     {
       "d": "2026-04-15",
-      "nav": 1935461.29
+      "nav": 1928939.27
     },
     {
       "d": "2026-04-16",
-      "nav": 1962825.07
+      "nav": 1956210.84
     },
     {
       "d": "2026-04-17",
-      "nav": 1970036.87
+      "nav": 1963398.34
     },
     {
       "d": "2026-04-20",
-      "nav": 1984983.31
+      "nav": 1978294.41
     },
     {
       "d": "2026-04-21",
-      "nav": 1979101.08
+      "nav": 1972432.01
     },
     {
       "d": "2026-04-22",
-      "nav": 1989805.01
+      "nav": 1983099.87
     },
     {
       "d": "2026-04-23",
-      "nav": 1965702.36
+      "nav": 1959078.43
     },
     {
       "d": "2026-04-24",
-      "nav": 1955702.74
+      "nav": 1949112.51
     },
     {
       "d": "2026-04-27",
-      "nav": 1969762.56
+      "nav": 1963124.95
     },
     {
       "d": "2026-04-28",
-      "nav": 1948860.97
+      "nav": 1942293.8
     },
     {
       "d": "2026-04-29",
-      "nav": 1973285.5
+      "nav": 1966636.02
     },
     {
       "d": "2026-04-30",
-      "nav": 1981313.09
+      "nav": 1974636.56
     },
     {
       "d": "2026-05-06",
-      "nav": 2010834.19
+      "nav": 2004058.18
     },
     {
       "d": "2026-05-07",
-      "nav": 2034314.11
+      "nav": 2027458.99
     },
     {
       "d": "2026-05-08",
-      "nav": 2053967.48
+      "nav": 2047046.12
     },
     {
       "d": "2026-05-11",
-      "nav": 2072967.15
+      "nav": 2065981.77
     },
     {
       "d": "2026-05-12",
-      "nav": 2054533.03
+      "nav": 2047609.77
     },
     {
       "d": "2026-05-13",
-      "nav": 2072593.35
+      "nav": 2065609.24
     },
     {
       "d": "2026-05-14",
-      "nav": 2035810.0
+      "nav": 2028949.84
     },
     {
       "d": "2026-05-15",
-      "nav": 2024492.7
+      "nav": 2017670.67
     },
     {
       "d": "2026-05-18",
-      "nav": 2023940.26
+      "nav": 2017120.09
     },
     {
       "d": "2026-05-19",
-      "nav": 2042964.38
+      "nav": 2036080.1
     },
     {
       "d": "2026-05-20",
-      "nav": 2028510.49
+      "nav": 2021674.92
     },
     {
       "d": "2026-05-21",
-      "nav": 1969064.41
+      "nav": 1962429.15
     },
     {
       "d": "2026-05-22",
-      "nav": 2000369.56
+      "nav": 1993628.82
     },
     {
       "d": "2026-05-25",
-      "nav": 1998823.24
+      "nav": 1992087.71
     },
     {
       "d": "2026-05-26",
-      "nav": 1970433.26
+      "nav": 1963793.4
     },
     {
       "d": "2026-05-27",
-      "nav": 1930281.0
+      "nav": 1923776.43
     },
     {
       "d": "2026-05-28",
-      "nav": 1942386.14
+      "nav": 1935840.79
     },
     {
       "d": "2026-05-29",
-      "nav": 1897040.39
+      "nav": 1890647.84
     },
     {
       "d": "2026-06-01",
-      "nav": 1915647.04
+      "nav": 1909191.79
     },
     {
       "d": "2026-06-02",
-      "nav": 1900726.64
+      "nav": 1894321.66
     },
     {
       "d": "2026-06-03",
-      "nav": 1891022.72
+      "nav": 1884650.45
     },
     {
       "d": "2026-06-04",
-      "nav": 1870208.96
+      "nav": 1863906.82
     },
     {
       "d": "2026-06-05",
-      "nav": 1877511.51
+      "nav": 1871184.77
     },
     {
       "d": "2026-06-08",
-      "nav": 1827452.65
+      "nav": 1821294.59
     },
     {
       "d": "2026-06-09",
-      "nav": 1848476.77
+      "nav": 1842247.87
     },
     {
       "d": "2026-06-10",
-      "nav": 1822532.01
+      "nav": 1816390.53
     },
     {
       "d": "2026-06-11",
-      "nav": 1799829.06
+      "nav": 1793764.08
     },
     {
       "d": "2026-06-12",
-      "nav": 1818860.67
+      "nav": 1812731.57
     },
     {
       "d": "2026-06-15",
-      "nav": 1854279.66
+      "nav": 1848031.2
     },
     {
       "d": "2026-06-16",
-      "nav": 1866112.84
+      "nav": 1859824.5
     },
     {
       "d": "2026-06-17",
-      "nav": 1856655.78
+      "nav": 1850399.32
     },
     {
       "d": "2026-06-18",
-      "nav": 1849958.77
+      "nav": 1843724.88
     },
     {
       "d": "2026-06-22",
-      "nav": 1861245.75
+      "nav": 1854973.82
     },
     {
       "d": "2026-06-23",
-      "nav": 1858964.6
+      "nav": 1852700.35
     },
     {
       "d": "2026-06-24",
-      "nav": 1836865.66
+      "nav": 1830675.88
     },
     {
       "d": "2026-06-25",
-      "nav": 1810451.47
+      "nav": 1804350.71
     },
     {
       "d": "2026-06-26",
-      "nav": 1763521.73
+      "nav": 1757579.1
     },
     {
       "d": "2026-06-29",
-      "nav": 1762652.38
+      "nav": 1756712.68
     },
     {
       "d": "2026-06-30",
-      "nav": 1783952.42
+      "nav": 1777940.95
     },
     {
       "d": "2026-07-01",
-      "nav": 1821497.93
+      "nav": 1815359.94
     },
     {
       "d": "2026-07-02",
-      "nav": 1808024.8
+      "nav": 1801932.21
     },
     {
       "d": "2026-07-03",
-      "nav": 1828165.93
+      "nav": 1822005.47
     },
     {
       "d": "2026-07-06",
-      "nav": 1805664.81
+      "nav": 1799580.17
     },
     {
       "d": "2026-07-07",
-      "nav": 1757796.73
+      "nav": 1751873.4
     },
     {
       "d": "2026-07-08",
-      "nav": 1730913.94
+      "nav": 1725081.2
     },
     {
       "d": "2026-07-09",
-      "nav": 1739685.93
+      "nav": 1733823.62
     },
     {
       "d": "2026-07-10",
-      "nav": 1753763.56
+      "nav": 1747853.82
     },
     {
       "d": "2026-07-13",
-      "nav": 1682118.25
+      "nav": 1676449.94
     },
     {
       "d": "2026-07-14",
-      "nav": 1708108.04
+      "nav": 1702352.14
     },
     {
       "d": "2026-07-15",
-      "nav": 1711730.85
+      "nav": 1705962.74
     },
     {
       "d": "2026-07-16",
-      "nav": 1700725.24
+      "nav": 1694994.23
     },
     {
       "d": "2026-07-17",
-      "nav": 1622726.61
+      "nav": 1617258.43
     },
     {
       "d": "2026-07-20",
-      "nav": 1582923.7
+      "nav": 1577589.64
     },
     {
       "d": "2026-07-21",
-      "nav": 1605852.76
+      "nav": 1600441.44
     },
     {
       "d": "2026-07-22",
-      "nav": 1590650.82
+      "nav": 1585290.73
     },
     {
       "d": "2026-07-23",
-      "nav": 1619624.52
+      "nav": 1614166.79
     },
     {
       "d": "2026-07-24",
-      "nav": 1576606.83
+      "nav": 1571294.06
     },
     {
       "d": "2026-07-27",
-      "nav": 1624034.94
+      "nav": 1618562.35
     },
     {
       "d": "2026-07-28",
-      "nav": 1611858.44
+      "nav": 1606426.88
     },
     {
       "d": "2026-07-29",
-      "nav": 1632359.38
+      "nav": 1626858.74
     },
     {
       "d": "2026-07-30",
-      "nav": 1602227.97
+      "nav": 1596828.86
     },
     {
       "d": "2026-07-31",
-      "nav": 1643661.46
+      "nav": 1638122.73
     },
     {
       "d": "2026-08-03",
-      "nav": 1663080.68
+      "nav": 1657476.52
     },
     {
       "d": "2026-08-04",
-      "nav": 1694087.89
+      "nav": 1688379.24
     },
     {
       "d": "2026-08-05",
-      "nav": 1724238.87
+      "nav": 1718428.62
     },
     {
       "d": "2026-08-06",
-      "nav": 1733422.25
+      "nav": 1727581.05
     },
     {
       "d": "2026-08-07",
-      "nav": 1748739.13
+      "nav": 1742846.32
     },
     {
       "d": "2026-08-10",
-      "nav": 1772437.82
+      "nav": 1766465.15
     },
     {
       "d": "2026-08-11",
-      "nav": 1764725.59
+      "nav": 1758778.91
     },
     {
       "d": "2026-08-12",
-      "nav": 1785933.3
+      "nav": 1779915.16
     },
     {
       "d": "2026-08-13",
-      "nav": 1767038.62
+      "nav": 1761084.14
     },
     {
       "d": "2026-08-14",
-      "nav": 1769179.99
+      "nav": 1763218.3
     },
     {
       "d": "2026-08-17",
-      "nav": 1800595.87
+      "nav": 1794528.31
     },
     {
       "d": "2026-08-18",
-      "nav": 1799830.34
+      "nav": 1793765.37
     },
     {
       "d": "2026-08-19",
-      "nav": 1725652.31
+      "nav": 1719837.29
     },
     {
       "d": "2026-08-20",
-      "nav": 1748736.97
+      "nav": 1742844.16
     },
     {
       "d": "2026-08-21",
-      "nav": 1747163.74
+      "nav": 1741276.24
     },
     {
       "d": "2026-08-24",
-      "nav": 1726917.41
+      "nav": 1721098.13
     },
     {
       "d": "2026-08-25",
-      "nav": 1752483.97
+      "nav": 1746578.54
     },
     {
       "d": "2026-08-26",
-      "nav": 1757040.45
+      "nav": 1751119.66
     },
     {
       "d": "2026-08-27",
-      "nav": 1777846.1
+      "nav": 1771855.2
     },
     {
       "d": "2026-08-28",
-      "nav": 1782251.55
+      "nav": 1776245.81
     },
     {
       "d": "2026-08-31",
-      "nav": 1795718.67
+      "nav": 1789667.55
     },
     {
       "d": "2026-09-01",
-      "nav": 1804405.39
+      "nav": 1798324.99
     },
     {
       "d": "2026-09-02",
-      "nav": 1792562.78
+      "nav": 1786522.29
     },
     {
       "d": "2026-09-03",
-      "nav": 1784932.03
+      "nav": 1778917.26
     },
     {
       "d": "2026-09-04",
-      "nav": 1779608.05
+      "nav": 1773611.21
     },
     {
       "d": "2026-09-07",
-      "nav": 1796060.15
+      "nav": 1790007.88
     },
     {
       "d": "2026-09-08",
-      "nav": 1807961.33
+      "nav": 1801868.95
     },
     {
       "d": "2026-09-09",
-      "nav": 1799446.95
+      "nav": 1793383.26
     },
     {
       "d": "2026-09-10",
-      "nav": 1775069.21
+      "nav": 1769087.68
     },
     {
       "d": "2026-09-11",
-      "nav": 1739619.28
+      "nav": 1733757.2
     },
     {
       "d": "2026-09-14",
-      "nav": 1748666.94
+      "nav": 1742774.37
     },
     {
       "d": "2026-09-15",
-      "nav": 1724746.29
+      "nav": 1718934.33
     },
     {
       "d": "2026-09-16",
-      "nav": 1749073.06
+      "nav": 1743179.12
     },
     {
       "d": "2026-09-17",
-      "nav": 1751124.69
+      "nav": 1745223.83
     },
     {
       "d": "2026-09-18",
-      "nav": 1778416.89
+      "nav": 1772424.07
     },
     {
       "d": "2026-09-21",
-      "nav": 1812414.41
+      "nav": 1806307.03
     },
     {
       "d": "2026-09-22",
-      "nav": 1814986.12
+      "nav": 1808870.07
     },
     {
       "d": "2026-09-23",
-      "nav": 1807996.32
+      "nav": 1801903.83
     },
     {
       "d": "2026-09-24",
-      "nav": 1785002.65
+      "nav": 1778987.63
     },
     {
       "d": "2026-09-28",
-      "nav": 1745055.88
+      "nav": 1739175.48
     },
     {
       "d": "2026-09-29",
-      "nav": 1756794.33
+      "nav": 1750874.37
     },
     {
       "d": "2026-09-30",
-      "nav": 1754519.64
+      "nav": 1748607.35
     },
     {
       "d": "2026-10-08",
-      "nav": 1735795.36
+      "nav": 1729946.17
     },
     {
       "d": "2026-10-09",
-      "nav": 1746302.43
+      "nav": 1740417.83
     },
     {
       "d": "2026-10-12",
-      "nav": 1718208.58
+      "nav": 1712418.65
     },
     {
       "d": "2026-10-13",
-      "nav": 1724376.53
+      "nav": 1718565.82
     },
     {
       "d": "2026-10-14",
-      "nav": 1694345.58
+      "nav": 1688636.06
     },
     {
       "d": "2026-10-15",
-      "nav": 1644599.93
+      "nav": 1639058.04
     },
     {
       "d": "2026-10-16",
-      "nav": 1651963.68
+      "nav": 1646396.98
     },
     {
       "d": "2026-10-19",
-      "nav": 1647227.98
+      "nav": 1641677.23
     },
     {
       "d": "2026-10-20",
-      "nav": 1667596.07
+      "nav": 1661976.69
     },
     {
       "d": "2026-10-21",
-      "nav": 1663435.03
+      "nav": 1657829.67
     },
     {
       "d": "2026-10-22",
-      "nav": 1619015.34
+      "nav": 1613559.67
     },
     {
       "d": "2026-10-23",
-      "nav": 1649329.31
+      "nav": 1643771.48
     },
     {
       "d": "2026-10-26",
-      "nav": 1639166.06
+      "nav": 1633642.48
     },
     {
       "d": "2026-10-27",
-      "nav": 1593399.97
+      "nav": 1588030.61
     },
     {
       "d": "2026-10-28",
-      "nav": 1623178.69
+      "nav": 1617708.98
     },
     {
       "d": "2026-10-29",
-      "nav": 1579872.18
+      "nav": 1574548.41
     },
     {
       "d": "2026-10-30",
-      "nav": 1531924.74
+      "nav": 1526762.54
     },
     {
       "d": "2026-11-02",
-      "nav": 1568640.24
+      "nav": 1563354.31
     },
     {
       "d": "2026-11-03",
-      "nav": 1551686.5
+      "nav": 1546457.71
     },
     {
       "d": "2026-11-04",
-      "nav": 1595525.21
+      "nav": 1590148.69
     },
     {
       "d": "2026-11-05",
-      "nav": 1632186.86
+      "nav": 1626686.8
     },
     {
       "d": "2026-11-06",
-      "nav": 1601421.46
+      "nav": 1596025.07
     },
     {
       "d": "2026-11-09",
-      "nav": 1603107.03
+      "nav": 1597704.96
     },
     {
       "d": "2026-11-10",
-      "nav": 1630866.47
+      "nav": 1625370.86
     },
     {
       "d": "2026-11-11",
-      "nav": 1649449.91
+      "nav": 1643891.67
+    },
+    {
+      "d": "2026-11-12",
+      "nav": 1619242.51
     }
   ],
   "curve_note": "Lightweight static Pages backtest: weekly signal, next-open rebalance, equal-weight target pool, daily close valuation."
