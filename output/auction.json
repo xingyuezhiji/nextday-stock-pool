@@ -15,15 +15,6 @@
  "gap_pct": null,
  "chain": [],
  "note": "今日(20261116)非计划买入日(计划买入日2026-11-13), 无需竞价确认",
- "positions": [
-  {
-   "code": "002307.SZ",
-   "name": "北新路桥",
-   "buy_px": 3.32,
-   "buy_date": "2026-11-12",
-   "cur_px": 3.23,
-   "float_pct": -2.71
-  }
- ],
- "positions_time": "2026-11-16 16:31:10"
+ "positions": [],
+ "positions_time": "2026-11-17 04:03:11"
 }
