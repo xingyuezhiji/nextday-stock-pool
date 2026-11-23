@@ -27,8 +27,15 @@
    "code": "002307.SZ",
    "name": "北新路桥",
    "ret_pct": 2.1
+  },
+  {
+   "publish_date": "2026-11-19",
+   "sell_date": "2026-11-23",
+   "code": "300494.SZ",
+   "name": "盛天网络",
+   "ret_pct": -0.54
   }
  ],
  "blocked": [],
- "updated": "2026-11-19"
+ "updated": "2026-11-23"
 }
