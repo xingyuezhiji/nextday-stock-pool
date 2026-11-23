@@ -1,18 +1,18 @@
 {
- "confirm_time": "2026-11-20 17:04:19",
+ "confirm_time": "2026-11-23 17:16:12",
  "buy_date": "2026-11-20",
  "signal_date": "2026-11-19",
- "for_today": true,
+ "for_today": false,
  "allow_buy": true,
  "floor_pct": -2.75,
  "position_pct": 100.0,
  "data_ok": true,
- "action": "buy",
- "name": "盛天网络",
- "code": "300494.SZ",
- "rank": 1,
- "open_px": 8.42,
- "gap_pct": -3.33,
+ "action": "skip",
+ "name": "",
+ "code": "",
+ "rank": null,
+ "open_px": null,
+ "gap_pct": null,
  "chain": [],
- "note": "确认买入第1名 盛天网络(300494.SZ), 竞价缺口-3.33%, 开盘价8.42, 仓位100.0%"
+ "note": "今日(20261123)非计划买入日(计划买入日2026-11-20), 无需竞价确认"
 }
