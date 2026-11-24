@@ -1,8 +1,8 @@
 {
- "confirm_time": "2026-11-23 17:40:29",
- "buy_date": "2026-11-20",
- "signal_date": "2026-11-19",
- "for_today": false,
+ "confirm_time": "2026-11-24 19:09:57",
+ "buy_date": "2026-11-24",
+ "signal_date": "2026-11-23",
+ "for_today": true,
  "allow_buy": true,
  "floor_pct": -2.75,
  "position_pct": 100.0,
@@ -13,8 +13,9 @@
  "rank": null,
  "open_px": null,
  "gap_pct": null,
- "chain": [],
- "note": "今日(20261123)非计划买入日(计划买入日2026-11-20), 无需竞价确认",
- "positions": [],
- "positions_time": "2026-11-24 05:55:40"
+ "chain": [
+  "第1名 中原传媒: 缺口-0.76%未达承接线-2.75% → 顺延",
+  "第2名 海信家电: 缺口-0.60%未达承接线-2.75% → 顺延"
+ ],
+ "note": "全部候选未达标 → 今日空仓"
 }
